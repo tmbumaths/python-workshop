@@ -1,0 +1,45 @@
+site_name: Complex Analysis
+nav: 
+  - Home: index.md
+  - Fundamentsls: 
+    - 'Definition': 'Introduction.ipynb'
+    - 'Plotting': 'Plotting.ipynb'
+    - 'Function': 'Function.ipynb'
+  - Integration:
+    - 'Definition': 'Integration.ipynb'
+
+plugins:
+  - search
+  - mknotebooks # pip install mknotebooks
+
+theme:
+  name: 'material'
+
+  palette:
+    primary: 'teal'
+    accent: 'teal'  
+
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+markdown_extensions:
+  - admonition
+
+  - mdx_math: # pip install python-markdown-math
+      enable_dollar_delimiter: true
+
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true    
+
+extra_javascript:
+  - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
+
+extra_css: 
+  - 'stylesheets/extra.css' # depends on theme
+
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2019 Sandeep Suman'
