@@ -3,6 +3,7 @@ start:
 	jupyter lab
 
 publish:
+	git commit -am "change made."
 	git push
 	mkdocs gh-deploy
 
