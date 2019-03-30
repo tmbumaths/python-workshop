@@ -2,3 +2,5 @@
 *site/
 *.ipynb_checkpoints
 *.python-version
+*experiment.ipynb
+*temp-plot.html
