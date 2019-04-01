@@ -4,3 +4,4 @@
 *.python-version
 *experiment.ipynb
 *temp-plot.html
+*__pycache__*
