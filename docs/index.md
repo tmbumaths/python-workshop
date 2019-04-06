@@ -28,6 +28,17 @@ The course ==Complex Analysis== focussed on the study of properties of complex f
 - Foundations Of Complex Analysis by S. Ponnusamy
 - Complex Variable: Schaum's Outlines Series
 
+## Routine
+
+| Weekday 	| 1st Period 	| 2nd Period 	| 3rd Period 	| 4th Period 	| 5th Period 	| 6th Period 	|
+|---------	|------------	|------------	|------------	|------------	|------------	|------------	|
+| MON     	|            	|            	| CA         	|            	|            	|            	|
+| TUE     	|            	|            	| CA         	|            	|            	|            	|
+| WED     	| CA         	|            	|            	|            	|            	|            	|
+| THR     	| CA         	|            	|            	|            	|            	|            	|
+| FRI     	|            	| CA         	|            	|            	|            	|            	|
+| SAT     	|            	| CA         	|            	|            	|            	|            	|
+
 ## Instructor
 
 Sandeep Suman, Assistant Professor, TMBU, Bhagalpur
