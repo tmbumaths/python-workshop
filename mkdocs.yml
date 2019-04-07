@@ -25,7 +25,7 @@ theme:
     code: 'Ubuntu Mono'
 
 markdown_extensions:
-  - pymdownx.arithmatex
+  # - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
