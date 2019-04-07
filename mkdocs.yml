@@ -8,6 +8,7 @@ nav:
   - Integration:
     - 'Definition': 'Integration.ipynb'
   - Assignments: assignments.md
+  - Exam: exam.md
 
 plugins:
   - search
