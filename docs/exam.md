@@ -11,5 +11,5 @@ Final exam divided in three groups. The questions are organized in three groups 
 | Group | No of <br> Questions | Marks per <br> Question | Total |
 |-------|:--------------------:|:-----------------------:|-------|
 | A     |         10/10        |            2            | 20    |
-| B     |          4/5         |            5            | 20    |
-| C     |          3/5         |            10           | 30    |
+| B     |         04/05        |            5            | 20    |
+| C     |         03/05        |            10           | 30    |

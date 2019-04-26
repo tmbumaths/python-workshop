@@ -21,8 +21,6 @@ The course ==Complex Analysis== focussed on the study of properties of complex f
 - [ ] Understand different type of singularity 
 - [ ] Finding the integraton along closed contour
 
-
-
 ## References
 
 - Foundations Of Complex Analysis by S. Ponnusamy
@@ -30,14 +28,14 @@ The course ==Complex Analysis== focussed on the study of properties of complex f
 
 ## Routine
 
-| Weekday 	| 1st Period 	| 2nd Period 	| 3rd Period 	| 4th Period 	| 5th Period 	| 6th Period 	|
-|---------	|------------	|------------	|------------	|------------	|------------	|------------	|
-| MON     	|            	|            	| CA         	|            	|            	|            	|
-| TUE     	|            	|            	| CA         	|            	|            	|            	|
-| WED     	| CA         	|            	|            	|            	|            	|            	|
-| THR     	| CA         	|            	|            	|            	|            	|            	|
-| FRI     	|            	| CA         	|            	|            	|            	|            	|
-| SAT     	|            	| CA         	|            	|            	|            	|            	|
+| Weekday | 1st Period | 2nd Period | 3rd Period | 4th Period | 5th Period | 6th Period |
+|---------|------------|------------|------------|------------|------------|------------|
+| MON     |            |            | CA         |            |            |            |
+| TUE     |            |            | CA         |            |            |            |
+| WED     | CA         |            |            |            |            |            |
+| THR     | CA         |            |            |            |            |            |
+| FRI     |            | CA         |            |            |            |            |
+| SAT     |            | CA         |            |            |            |            |
 
 ## Instructor
 
