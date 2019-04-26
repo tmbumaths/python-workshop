@@ -1,4 +1,4 @@
-site_name: Complex Analysis
+site_name: Linear Algebra
 nav: 
   - Home: index.md
   - Fundamentsls: 
@@ -18,7 +18,7 @@ theme:
   name: 'material'
 
   palette:
-    primary: 'teal'
+    primary: 'blue-grey'
     accent: 'teal'  
 
   font:
