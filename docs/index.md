@@ -10,19 +10,18 @@ This page is dedicated to the course of linear algebra taught in the university 
 
 ## Course Objectives
 
-The course ==linear algebra== focussed on the study of properties of complex functions. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly introduce the concept of differentiability and analyticity in complex domains. Here we will discuss the integration in the sense of complex functions.
+The course ==linear algebra== focussed on the study of finte dimensional vector spaces. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly involved introductory theory of matrices. Second course is concerned about abstract vector spaces. Here we will convert any vector space into $\mathbb{R}^n$ and then study it's properties, mainly the linear transformation. We also study bilinear and quadratic transformation in later part of this course. 
 
-- [ ] Understand contour integration
-- [ ] Apply Cauchy integral formula
-- [ ] Import results based on CIF
-- [ ] Ability to represent complex function as Power and Laurents series
-- [ ] Understand different type of singularity 
-- [ ] Finding the integraton along closed contour
+- [ ] Solve any system of linear equation
+- [ ] Finding matrix of linear transformation
+- [ ] Finding change of basis matrix 
+- [ ] Compute Jordan Form of a Matrix
+- [ ] Classify quadratic forms
+- [ ] Matrix of bilinear forms
 
 ## References
 
-- Foundations Of Complex Analysis by S. Ponnusamy
-- Complex Variable: Schaum's Outlines Series
+- Linear Algebra by Hoffman and Kunze
 
 ## Routine
 

@@ -1,12 +1,6 @@
 site_name: Linear Algebra
 nav: 
   - Home: index.md
-  - Fundamentsls: 
-    - 'Definition': 'Introduction.ipynb'
-    - 'Plotting': 'Plotting.ipynb'
-    - 'Function': 'Function.ipynb'
-  - Integration:
-    - 'Definition': 'Integration.ipynb'
   - Assignments: assignments.md
   - Exam: exam.md
 
