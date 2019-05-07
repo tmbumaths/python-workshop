@@ -22,8 +22,8 @@ The course ==linear algebra== focussed on the study of finte dimensional vector 
 ## References
 
 - Linear Algebra by Friedberg, Insel and Spence
-- Linear Algebra by Hoffman and Kunze
 - Linear Algebra: A Geometric Approach by Kumaresan
+- [Download this Free Book](https://www.math.ucdavis.edu/~linear/linear-guest.pdf)
 
 ## Routine
 
