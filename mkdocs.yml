@@ -1,9 +1,8 @@
 site_name: Linear Algebra
 nav: 
   - Home: index.md
-  - Fundamentsls: 
-    - 'Definition': 'Introduction.ipynb'
-    - 'Plotting': 'Plotting.ipynb'
+  - 'Linear Equations': 'linear-equations.md'
+  - Canonical Forms: 
     - 'Function': 'Function.ipynb'
   - Integration:
     - 'Definition': 'Integration.ipynb'
