@@ -21,8 +21,9 @@ In this course we learn the connection between these two and use the best of two
 
 ## References
 
-- Foundations Of Complex Analysis by S. Ponnusamy
-- Complex Variable: Schaum's Outlines Series
+- Linear Algebra by Friedberg, Insel and Spence
+- Linear Algebra: A Geometric Approach by Kumaresan
+- [Download this Free Book](https://www.math.ucdavis.edu/~linear/linear-guest.pdf)
 
 ## Routine
 
