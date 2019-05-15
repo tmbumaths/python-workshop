@@ -57,5 +57,7 @@ extra_css:
   - 'stylesheets/extra.css' # depends on theme
 
 
+google_analytics: ['UA-140256543-1', 'sandeepsuman.com']  
+
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2019 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
