@@ -7,8 +7,7 @@ This page is dedicated to the course of linear algebra taught in the university 
 - System of linear equation
 - Matrix of Linear Transformation
 - Change of Basis
-- Jordan Canonical Forms
-
+- Jordan Can
 ## Course Objectives
 
 The course ==linear algebra== focussed on the study of properties of complex functions. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly introduce the concept of basic matrix theory, while second course discusses the theory of abstract vector space. 
@@ -27,15 +26,15 @@ In this course we learn the connection between these two and use the best of two
 
 ## Routine
 
-| Weekday | 1st Period | 2nd Period | 3rd Period | 4th Period | 5th Period | 6th Period |
-|---------|------------|------------|------------|------------|------------|------------|
-| MON     |            |            | LA         |            |            |            |
-| TUE     |            |            | LA         |            |            |            |
-| WED     |            |            |            |            |            |            |
-| THR     |            | LA         |            |            |            |            |
-| FRI     | LA         |            |            |            |            |            |
-| SAT     | LA         |            |            |            |            |            |
+| Weekday | 1st Period | 2nd Period | 3rd Period | 4th Period | 5th Period |
+|---------|------------|------------|------------|------------|------------|
+| MON     |            |            | LA         |            |            |
+| TUE     |            |            | LA         |            |            |
+| WED     |            |            |            |            |            |
+| THR     |            | LA         |            |            |            |
+| FRI     | LA         |            |            |            |            |
+| SAT     | LA         |            |            |            |            |
 
 ## Instructor
 
-Sandeep Suman, Assistant Professor, TMBU, Bhagalpur
+[Sandeep Suman](https://sandeepsuman.com), Assistant Professor, TMBU, Bhagalpur
