@@ -15,6 +15,7 @@ plugins:
 
 theme:
   name: 'material'
+  custom_dir: 'theme'
 
   palette:
     primary: 'blue-grey'
