@@ -14,3 +14,12 @@ img {
 .md-typeset__table {
     min-width: 100%;
  }
+
+  /* unordered list */
+  .md-content ul li {
+    list-style-type:  circle;
+  }
+  
+  .md-content ul li li {
+    list-style-type:  square;
+  }
