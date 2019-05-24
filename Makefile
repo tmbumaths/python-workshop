@@ -1,4 +1,4 @@
-start:
+dev:
 	git pull
 	mkdocs serve & jupyter lab
 
@@ -14,3 +14,7 @@ publish:
 change:
 	git commit -am "change made."
 	git push
+
+finish:
+	make change
+	make publish
