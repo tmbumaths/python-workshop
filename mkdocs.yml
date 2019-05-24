@@ -55,6 +55,8 @@ markdown_extensions:
   - toc:
       permalink: true    
 
+  - footnotes
+
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
 
