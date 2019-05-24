@@ -15,6 +15,6 @@ change:
 	git commit -am "change made."
 	git push
 
-finish: change publish
+finish:
 	make change
 	make publish
