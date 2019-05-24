@@ -4,10 +4,24 @@ This page is dedicated to the course of linear algebra taught in the university 
 
 ## Syllabus
 
-- System of linear equation
-- Matrix of Linear Transformation
-- Change of Basis
-- Jordan Can
+- [x] System of linear equation
+- [x] Matrix of Linear Transformation
+- [x] Change of Basis
+- [x] Minimal Polynomials
+- [x] Similarity of Linear Transformation
+- [x] Invariant Subspace
+- [ ] Nilpotent Transformation 
+- [ ] Primary Decomposition Theorem
+- [ ] Rational Forms
+- [ ] Jordan Canonical Form
+- [ ] Inner Product Spaces
+- [ ] Gram-Schmidt Orthogonalization
+- [ ] Self-adjoint Operators
+- [ ] Bilinear Forms
+- [ ] Quadratic Forms
+- [ ] Sylvester's law of inertia
+
+
 ## Course Objectives
 
 The course ==linear algebra== focussed on the study of properties of complex functions. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly introduce the concept of basic matrix theory, while second course discusses the theory of abstract vector space. 
@@ -21,7 +35,7 @@ In this course we learn the connection between these two and use the best of two
 ## References
 
 - Linear Algebra by Friedberg, Insel and Spence
-- Linear Algebra: A Geometric Approach by Kumaresan
+- Linear Algebra by Hoffman and Kunze
 - [Download this Free Book](https://www.math.ucdavis.edu/~linear/linear-guest.pdf)
 
 ## Routine
