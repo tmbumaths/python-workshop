@@ -6,10 +6,6 @@ site_url: 'https://sandeepsuman.com/linear-algebra/'
 nav: 
   - Home: index.md
   - 'Linear Equations': 'linear-equations.md'
-  - Canonical Forms: 
-    - 'Function': 'Function.ipynb'
-  - Integration:
-    - 'Definition': 'Integration.ipynb'
   - Assignments: assignments.md
   - Exam: exam.md
 
