@@ -10,16 +10,16 @@ This page is dedicated to the course of linear algebra taught in the university 
 - [x] Minimal Polynomials
 - [x] Similarity of Linear Transformation
 - [x] Invariant Subspace
-- [ ] Nilpotent Transformation
-- [ ] Primary Decomposition Theorem
-- [ ] Rational Forms
-- [ ] Jordan Canonical Form
+- [x] Nilpotent Transformation
+- [x] Primary Decomposition Theorem
+- [x] Rational Forms
+- [x] Jordan Canonical Form
 - [x] Inner Product Spaces
 - [x] Gram-Schmidt Orthogonalization
 - [x] Self-adjoint Operators
-- [ ] Bilinear Forms
-- [ ] Quadratic Forms
-- [ ] Sylvester's law of inertia
+- [x] Bilinear Forms
+- [x] Quadratic Forms
+- [x] Sylvester's law of inertia
 
 ## Course Objectives
 
