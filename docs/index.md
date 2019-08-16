@@ -10,21 +10,20 @@ This page is dedicated to the course of linear algebra taught in the university 
 - [x] Minimal Polynomials
 - [x] Similarity of Linear Transformation
 - [x] Invariant Subspace
-- [ ] Nilpotent Transformation 
+- [ ] Nilpotent Transformation
 - [ ] Primary Decomposition Theorem
 - [ ] Rational Forms
 - [ ] Jordan Canonical Form
-- [ ] Inner Product Spaces
-- [ ] Gram-Schmidt Orthogonalization
-- [ ] Self-adjoint Operators
+- [x] Inner Product Spaces
+- [x] Gram-Schmidt Orthogonalization
+- [x] Self-adjoint Operators
 - [ ] Bilinear Forms
 - [ ] Quadratic Forms
 - [ ] Sylvester's law of inertia
 
-
 ## Course Objectives
 
-The course ==linear algebra== focussed on the study of properties of complex functions. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly introduce the concept of basic matrix theory, while second course discusses the theory of abstract vector space. 
+The course ==linear algebra== focussed on the study of properties of complex functions. This is the third course on linear algebra in TMBU, Bhagalpur. The first course mainly introduce the concept of basic matrix theory, while second course discusses the theory of abstract vector space.
 
 In this course we learn the connection between these two and use the best of two worlds.
 
