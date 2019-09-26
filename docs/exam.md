@@ -36,6 +36,10 @@ The course has two exams one is internal of 15 marks, while the other is final w
 
 ## Internal Exam
 
+To download the question of last internal exam [click here](/PDFs/18203CIA.pdf).
+
+<iframe width="650" height="401" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQezAPJz37X8oFDoZ7fKz7BH-In-DDGaPPKFvE3ToOT4YCwC9FY3jalygaf3dxbOV2L-wGlpv4kyehj/pubchart?oid=1900683609&amp;format=interactive"></iframe>
+
 ## Final Exam
 
 Final exam divided in three groups. The questions are organized in three groups as follows:
