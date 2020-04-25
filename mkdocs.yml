@@ -3,12 +3,7 @@ site_description: 'This page is dedicated to the course of linear algebra taught
 site_author: 'Sandeep Suman'
 site_url: 'https://sandeepsuman.com/linear-algebra/'
 
-nav: 
-  - Home: index.md
-  - 'Linear Equations': 'linear-equations.md'
-  - 'Matrix of Linear Transformation': 'matrix-linear-transformation.md'
-  - Assignments: assignments.md
-  - Exam: exam.md
+
 
 plugins:
   - search
