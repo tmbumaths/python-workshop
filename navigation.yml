@@ -1,0 +1,6 @@
+nav: 
+  - Home: index.md
+  - 'Linear Equations': 'linear-equations.md'
+  - 'Matrix of Linear Transformation': 'matrix-linear-transformation.md'
+  - Assignments: assignments.md
+  - Exam: exam.md

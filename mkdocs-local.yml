@@ -1,0 +1,83 @@
+site_name: Linear Algebra
+site_description: 'This page is dedicated to the course of linear algebra taught in the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_author: 'Sandeep Suman'
+site_url: 'https://sandeepsuman.com/linear-algebra/'
+
+plugins:
+  - search
+  - mknotebooks # pip install mknotebooks
+  - minify:
+      minify_html: true
+
+
+theme:
+  name: material
+  custom_dir: 'theme'
+  features:
+    - instant
+    - tabs
+
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+
+
+  palette:
+    primary: 'blue-grey'
+    accent: 'teal'  
+
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+  static_templates:
+    - 404.html
+    
+  favicon: 'static/images/favicon.ico'
+
+markdown_extensions:
+  - admonition
+  # - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+  - mdx_math: # pip install python-markdown-math
+      enable_dollar_delimiter: true
+
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+  - meta      
+
+extra_javascript:
+  - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
+  - 'static/js/app-local.js'
+
+extra_css:
+  - 'static/stylesheets/extra.css' # depends on theme
+
+
+# google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2019 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
+
+extra:
+  manifest: 'manifest-local.json'
+
