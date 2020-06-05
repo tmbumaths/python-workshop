@@ -1,7 +1,7 @@
-site_name: Linear Algebra
-site_description: 'This page is dedicated to the course of linear algebra taught in the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: FDP Python 3
+site_description: 'This page is dedicated the faculty developemnt programme organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/linear-algebra/'
+site_url: 'https://sandeepsuman.com/fdp-python-2020/'
 
 plugins:
   - search
@@ -25,7 +25,7 @@ theme:
   static_templates:
     - 404.html
     
-  favicon: '/linear-algebra/static/images/favicon.ico'
+  favicon: '/fdp-python-2020/static/images/favicon.ico'
 
 markdown_extensions:
   - admonition
@@ -58,16 +58,16 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - '/linear-algebra/static/js/app.js'
+  - '/fdp-python-2020/static/js/app.js'
 
 extra_css:
-  - '/linear-algebra/static/stylesheets/extra.css' # depends on theme
+  - '/fdp-python-2020/static/stylesheets/extra.css' # depends on theme
 
 
 google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2019 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
+copyright: 'Copyright &copy; 2016 - 2020 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
 
 extra:
   manifest: 'manifest.json'

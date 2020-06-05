@@ -1,7 +1,7 @@
-site_name: Linear Algebra
-site_description: 'This page is dedicated to the course of linear algebra taught in the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: FDP Python 3
+site_description: 'This page is dedicated the faculty developemnt programme organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/linear-algebra/'
+site_url: 'https://sandeepsuman.com/fdp-python-2020/'
 
 plugins:
   - search

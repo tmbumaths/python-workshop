@@ -1,7 +1,7 @@
-site_name: FDP Python 3
-site_description: 'This page is dedicated the faculty developemnt programme organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: Linear Algebra
+site_description: 'This page is dedicated to the course of linear algebra taught in the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/fdp-python-2020/'
+site_url: 'https://sandeepsuman.com/linear-algebra/'
 
 plugins:
   - search
@@ -9,17 +9,9 @@ plugins:
   - minify:
       minify_html: true
 
-
 theme:
   name: material
   custom_dir: 'theme'
-  features:
-    - instant
-    - tabs
-
-  icon:
-    logo: material/library
-    repo: fontawesome/brands/git-alt
 
 
   palette:
@@ -33,7 +25,7 @@ theme:
   static_templates:
     - 404.html
     
-  favicon: 'static/images/favicon.ico'
+  favicon: '/linear-algebra/static/images/favicon.ico'
 
 markdown_extensions:
   - admonition
@@ -44,8 +36,7 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
@@ -67,20 +58,24 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'static/js/app-local.js'
+  - '/linear-algebra/static/js/app.js'
 
 extra_css:
-  - 'static/stylesheets/extra.css' # depends on theme
+  - '/linear-algebra/static/stylesheets/extra.css' # depends on theme
 
 
-# google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
+google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2019 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
+copyright: 'Copyright &copy; 2016 - 2020 <a href="https://sandeepsuman.com">Sandeep Suman</a>'
 
 extra:
-  manifest: 'manifest-local.json'
+  manifest: 'manifest.json'
+
 
 nav: 
   - Home: index.md
-  - Quick Start: quickstart-python.md
+  - 'Linear Equations': 'linear-equations.md'
+  - 'Matrix of Linear Transformation': 'matrix-linear-transformation.md'
+  - Assignments: assignments.md
+  - Exam: exam.md
