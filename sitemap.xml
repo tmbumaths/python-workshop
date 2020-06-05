@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://sandeepsuman.com/linear-algebra/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <loc>https://sandeepsuman.com/fdp-python-2020/</loc>
+     <lastmod>2020-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://sandeepsuman.com/linear-algebra/linear-equations/</loc>
-     <lastmod>2020-04-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://sandeepsuman.com/linear-algebra/matrix-linear-transformation/</loc>
-     <lastmod>2020-04-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://sandeepsuman.com/linear-algebra/assignments/</loc>
-     <lastmod>2020-04-25</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://sandeepsuman.com/linear-algebra/exam/</loc>
-     <lastmod>2020-04-25</lastmod>
+     <loc>https://sandeepsuman.com/fdp-python-2020/quickstart-python/</loc>
+     <lastmod>2020-06-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
