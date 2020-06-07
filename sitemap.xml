@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://sandeepsuman.com/fdp-python-2020/</loc>
-     <lastmod>2020-06-05</lastmod>
+     <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://sandeepsuman.com/fdp-python-2020/quickstart-python/</loc>
-     <lastmod>2020-06-05</lastmod>
+     <lastmod>2020-06-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://sandeepsuman.com/fdp-python-2020/day1/</loc>
+     <lastmod>2020-06-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
