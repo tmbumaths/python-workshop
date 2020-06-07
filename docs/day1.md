@@ -14,7 +14,15 @@ pi = 3.14 # a float
 name = "Sandeep Suman" # a string
 ```
 
-**Ex:** Choose three variable and assign each one as an integer, a float and a string, and print them.
+**Ex:** Choose three variable and assign each one as an integer, a float and a string, and print them. For example to print the `name` variable we use 
+
+``` python 
+print(name)
+```
+
+```
+Sandeep Suman
+```
 
 ## Matheamtical Operations
 
@@ -135,7 +143,7 @@ plt.show()
 
 **Ex:** Plot the following function in the interval $(1,10)$
 
-- $\sin^2(x) + cos(x)$
+- $\sin^2(x) + \cos(x)$
 - $2x^2 + 1$ 
 
 ### Adding Attributes in Plots

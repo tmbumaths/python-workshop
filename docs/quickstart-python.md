@@ -41,6 +41,6 @@ Plese install anaconda python from the bottom of the following page according to
 **Running a simple program** 
 In order to run a simple python program and test the installation please follow these stpes
 
-1. Open the terminal
-2. Type `python`
-3. You can see python running in the terminal.
+1. Open the spyder app
+2. Type `python("hello world!)`
+3. You can see `hello world` printed in output window.
