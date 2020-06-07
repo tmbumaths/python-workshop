@@ -212,6 +212,29 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
 ## More Things to Explore 
 
 - Multiple plots
+
+  ``` python
+  import numpy as np 
+  import matplotlib.pyplot  as plt
+
+  x=np.linspace(0,2*np.pi,400)
+  a=np.sin(x)
+  b=np.cos(x)
+  c=a+b
+  
+  plt.plot(x,a, label='sin(x)' )
+  plt.plot(x,b, label='cos(x)')
+  plt.plot(x,c, label='sin(x)+cos(x)')
+  plt.xlabel('x-axis', fontsize=20)
+  plt.ylabel('y-axis', fontsize=20)
+  plt.title('MULTIPLE GRAPH' ,fontsize=40)
+  plt.legend()
+  plt.savefig('multiplegraph.png')
+  plt.show()
+  ```
+
+  ![img](./image/multiplegraph.png)
+  
 - Subplots
 
 ## References

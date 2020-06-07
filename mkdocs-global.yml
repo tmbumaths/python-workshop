@@ -13,6 +13,10 @@ theme:
   name: material
   custom_dir: 'theme'
 
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/git-alt
+
 
   palette:
     primary: 'blue-grey'
