@@ -241,5 +241,5 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
 
 1. [:material-file-outline: Official Python Refererence](https://docs.python.org/3/)
 2. [:material-file-outline: Matplotlib Documentation](https://matplotlib.org/3.2.1/contents.html#)
-1. [:material-video-outline: Basic Math, Mathematical Operators and Python Expressions](https://www.youtube.com/watch?v=Os4gZUI1ZlM)
+3. [:material-video-outline: Basic Math, Mathematical Operators and Python Expressions](https://www.youtube.com/watch?v=Os4gZUI1ZlM)
 4. [:material-file-outline: Gallery Matplotlib](https://matplotlib.org/3.1.1/gallery/index.html)
