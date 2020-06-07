@@ -131,28 +131,62 @@ plt.plot(x,y)
 plt.show()
 ```
 
+![img](./image/simple-sine.png)
+
 **Ex:** Plot the following function in the interval $(1,10)$
 
 - $\sin^2(x) + cos(x)$
 - $2x^2 + 1$ 
 
-### Adding attributes in graph
+### Adding Attributes in Plots
 
 The graph shows visual information in a small space in the form of an image. The representation can be improved by adding app tributes like title legends and other things.
 
 - Modify the *attributes* of a *plot* like *color, line width, line style* by passing additional *arguments.*
 
+	`plt.plot(x, y,color='blue')` this will make the graph blue 
+
 - Add *title* to a *plot* using *title command.*
+
+	`plt.title('Derivative Graph')` this will make a title of the graph
 
 - Incorporate *LaTeX style formatting* by adding a $ sign before and after the *string.*
 
+	`plt.plot(x,f(x),label='$f(x)=tan(x^2)$')`
+
 - Label *x* and *y* *axes* using *xlabel()* and *ylabel() commands.*
+
+	``` python 
+  plt.xlabel('x values')
+	plt.ylabel('y values')
+  ```
 
 - Add *annotations* to a plot using *annotate() command.*
 
 - Get and set the *limits of axes* using *xlim()* and *ylim() commands.*
 
-**Ex:** Draw a *plot* of *cosine graph* between $-2\pi$ to $2\pi$ with line thickness $4$.
+**Example using all these attributes together:** 
+
+``` python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-20, 20., 250)
+y = np.sin(x) / x
+
+
+plt.plot(x, y, color='red', linestyle='dashed')
+plt.xlabel("$x$-axis")
+plt.ylabel(r"$y = \frac{\sin(x)}{x}$")
+plt.legend([r"$f(x)=\tan(x^2)$"])
+plt.title(r"Topologist Sine Curve")
+
+plt.show()
+```
+
+![img](./image/topologist-sine.png)
+
+**Ex:** Draw a *plot* of *cosine graph* between $-2\pi$ to $2\pi$ with line thickness $4$ in blue colour.
 
 ### Saving Plots
 
@@ -167,102 +201,22 @@ In order to save plots in the local directory we use `savefig` function. The pl
 To save the figure in currrent working directory use the code. 
 
 ``` python 
-
 plt.savefig("myplot.png")
 ```
+To save the plot of topologist sine curve I have used the following 
 
+``` python
+plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches='tight')
+```
+
+## More Things to Explore 
+
+- Multiple plots
+- Subplots
 
 ## References
 
-1. [Basic Math, Mathematical Operators and Python Expressions](https://www.youtube.com/watch?v=Os4gZUI1ZlM)
-
-
-<!-- will be deleted later 
-##### And the answers,
-
-(1).To save a plot, we use the *savefig() function.*
-
-(2).If we save a file without complete path, it gets saved in the current *working directory.*
-
-##### (1.5):- Multiple plots
-
-##### In this tutorial, we have learn about,
-
-(1).Draw *multiple plots* which are *overlaid.*
-
-(2).Use the *figure command.*
-
-(3).Use the *legend command.*
-
-(4).Switch between the *plots* and perform some *operations* on each of them like saving the *plots.*
-
-##### some question
-
-(1).What *command* is used to get individual *plots* separately?
-
-(2).What will be the *command* to identify *sine* and *cosine curve?*
-##### And the answers,
-
-(1).The *command "figure()"* can get us the individual *plots* separately.
-
-(2).*legend* inside *brackets* inside *square* *brackets* inside *inverted commas sin(x) comma inside inverted commas cos(x)*
-
-##### (1.6):- Subplots
-
-##### In this tutorial, we have learn about
-
-(1).*subplots* and to *switch* between them.
-
-##### some question
-
-(1).Which of the following is correct?
-
--*subplot* inside *brackets numRows comma numCols, plotNum*
-
--*subplot* inside *brackets numRows comma numCols*
-
--*subplot* inside *brackets numCols comma numRows*
-
-##### And the answers,
-
-(1).The subplot command takes three arguments namely the number of rows, number of columns and the plot number.
-
-##### (1.7):- Additional Features of IPython.
-
-##### In this tutorial, we have learn about
-
-(1).Retrieve the *history* using *percentage history command.* 
-
-(2). View only a part of *history* by passing argument to *percentage history command.*
-
-(3). Save the required lines of code in required order using *percentage save command.* 4. Use *'percentage run space hypen i'* command to run a saved script
-
-##### some question:-
-
-(1).How do you save the command lines 2 3 4 5 7 9 10 11?
-
-*percentage save <filename> 2-5 7 9 hyphen 11*
-
-*percentage save <filename> 2 hyphen 11*
-
-*percentage save <filename>*
-
-*percentage save 2 hyphen 5 7 9 hyphen 11*
-
-(2).Which is the command to run the script?
-
-*Percentage execute <script name>*
-
-*percentage run hyphen i <script name>*
-
-*percentage run <script name>*
-
-*percentage execute hyphen i <script name>*
-
-##### And the answers,
-
-(1).To save the commands 2 3 4 5 7 9 10 11, we issue the *command percentage save <filename> 2 hyphen 5 space 7 space 9 hyphen 11*
-
-(2).To run the script we use *percentage run space hyphen i <scriptname>
-
---> 
+1. [:material-file-outline: Official Python Refererence](https://docs.python.org/3/)
+2. [:material-file-outline: Matplotlib Documentation](https://matplotlib.org/3.2.1/contents.html#)
+1. [:material-video-outline: Basic Math, Mathematical Operators and Python Expressions](https://www.youtube.com/watch?v=Os4gZUI1ZlM)
+4. [:material-file-outline: Gallery Matplotlib](https://matplotlib.org/3.1.1/gallery/index.html)
