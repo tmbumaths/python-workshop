@@ -1,4 +1,4 @@
-# Day 1 - DRAFT 
+# Day 1
 
 The agenda of today is the following.
 
@@ -234,7 +234,7 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
   ```
 
   ![img](./image/multiplegraph.png)
-  
+
 - Subplots
 
 ## References
