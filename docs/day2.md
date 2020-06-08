@@ -8,7 +8,7 @@ To load the data from external text or CSV file we have to use `loadtxt` functio
 
 ### Single Column File
 
-A single comma separated row file can be read as the following. Let `primes.txt` stores the data consist of first 100 prime numbers separated by comma.
+A single comma separated row file can be read as the following. Let [primes.txt](./data/primes.txt) stores the data consist of first 100 prime numbers separated by comma.
 
 ``` shell
 cat primes.txt
@@ -48,7 +48,7 @@ print(primes)
 
 ### Multi Columns File 
 
-Suppose we want to load a [file](./data/marks.csv) that consist of two columns with a header as follows
+Suppose we want to load a [marks.csv](./data/marks.csv) that consist of two columns with a header as follows
 
 ``` shell
 head marks.csv
