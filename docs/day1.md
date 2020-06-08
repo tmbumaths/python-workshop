@@ -14,7 +14,7 @@ pi = 3.14 # a float
 name = "Sandeep Suman" # a string
 ```
 
-**Ex:** Choose three variable and assign each one as an integer, a float and a string, and print them. For example to print the `name` variable we use 
+**Ex:** Choose three variables and assign one as an integer, one as a float and one as a string, and print them. For example to print the `name` variable we use 
 
 ``` python 
 print(name)
@@ -24,9 +24,12 @@ print(name)
 Sandeep Suman
 ```
 
+!!! tip
+    The line after `#` got ignored by the python. It is called a comment in any programming language. You can use comment to add some instructions to the code. 
+
 ## Matheamtical Operations
 
-Mathematical operations, i.e., addition, substraction etc. can be defined as 
+Mathematical operations, i.e., addition, substraction etc. can be done as 
 
 ``` python
 5 + 6 # addition
@@ -36,7 +39,7 @@ Mathematical operations, i.e., addition, substraction etc. can be defined as
 5 ** 6 # exponent or power
 ```
 
-**Ex:** Choose two variable `x` and `y` and assign each one as integer. Try each of the following operations on them like `x+y`. Finally print them
+**Ex:** Choose two variable `x` and `y` and assign each one as an integer. Try each of the above operations on them like `x+y`. Finally print them
 
 ``` python
 x = 2 
@@ -51,7 +54,7 @@ print(z)
 
 ### Mathematical Expression
 
-We can use these operations to 4 complicated mathematical expressions in python, for example, we can evaluate 
+We can use these operations to evaluate complicated mathematical expressions in python, for example, we can compute 
 $$ f(x) = \frac{x^2 + 1}{y-1} $$
 as follows
 
@@ -78,7 +81,7 @@ import numpy as np # method 2
 from numpy import * # method 3
 ```
 
-Any library has some function or variable included in them. for example `numpy` library has mathematical sine function as `sin` and variable `pi`. For each method these things can be accessed as follows
+Any library has some function or variable included in them. for example `numpy` library has mathematical sine function as `sin` and the variable `pi`. For each method these things can be accessed as follows
 
 **Method 1:** In order to import the function and variable we will do the following 
 
@@ -109,7 +112,7 @@ print(sin(pi)) # prints the sin(pi)
 
 ## Plotting simple function in python
 
-To plot simple functions in python we use `numpy` and `matplotlib` libraries and three functions. 
+To plot simple functions in python we use `numpy` and `matplotlib` libraries and three important functions. 
 
 - `linspace` from `numpy`
     The function `linspace` is used to generate a number of equidistant points on a line inteval. It takes three arguments.
@@ -121,25 +124,30 @@ To plot simple functions in python we use `numpy` and `matplotlib` libraries and
 - `plot` from `matplotlib.pyplot` 
     This is the function used to make a plot. It requires two argument.
 
-    `plot(x,y)` will list of elements x versus y
+    `plot(x,y)` will plot list of elements x versus y
 
 - `show` from `matplotlib.pyplot`
-    This functin will show the final plot. It is simply invoked by typin `show()`
+    This function will show the final plot. It is simply invoked by typing `show()`
 
 ### Simple Plots
 
 Now we have understood the basic components used to plot a function in python. Now we will see them together in a simple example by plotting the function $\sin(x)$ between $-\pi$ to $\pi$. 
 
 ``` python
+# 1. import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
+# 2. generate a list of points in the given domain
 x = np.linspace(-np.pi, np.pi, 100)
+# 3. apply the function on x 
 y = np.sin(x)
+# 4. plot the y versus x
 plt.plot(x,y)
+# 5. show the plot
 plt.show()
 ```
 
-![img](./image/simple-sine.png)
+![img](/image/simple-sine.png)
 
 **Ex:** Plot the following function in the interval $(1,10)$
 
@@ -148,11 +156,11 @@ plt.show()
 
 ### Adding Attributes in Plots
 
-The graph shows visual information in a small space in the form of an image. The representation can be improved by adding app tributes like title legends and other things.
+The graph shows visual information in a small space in the form of an image. The representation can be improved by adding extra infomation like title legends and other things. These are called attributes.
 
 - Modify the *attributes* of a *plot* like *color, line width, line style* by passing additional *arguments.*
 
-	`plt.plot(x, y,color='blue')` this will make the graph blue 
+	`plt.plot(x, y, color='blue')` this will make the graph blue
 
 - Add *title* to a *plot* using *title command.*
 
@@ -164,14 +172,17 @@ The graph shows visual information in a small space in the form of an image. The
 
 - Label *x* and *y* *axes* using *xlabel()* and *ylabel() commands.*
 
-	``` python 
-  plt.xlabel('x values')
-	plt.ylabel('y values')
-  ```
+    ``` python 
+    plt.xlabel('x values')
+    plt.ylabel('y values')
+    ```
 
 - Add *annotations* to a plot using *annotate() command.*
 
 - Get and set the *limits of axes* using *xlim()* and *ylim() commands.*
+
+!!! tip
+    Try to add one attribute at a time. Use plane english in double/single quotes.
 
 **Example using all these attributes together:** 
 
@@ -192,25 +203,26 @@ plt.title(r"Topologist Sine Curve")
 plt.show()
 ```
 
-![img](./image/topologist-sine.png)
+![img](/image/topologist-sine.png)
 
 **Ex:** Draw a *plot* of *cosine graph* between $-2\pi$ to $2\pi$ with line thickness $4$ in blue colour.
 
 ### Saving Plots
 
-In order to save plots in the local directory we use `savefig` function. The plot can be save in the following format. 
+In order to save the plot in the local directory we use `savefig` function. The plot can be saved in the following format. 
 
-- pdf 
-- ps 
-- png 
-- svg 
+- pdf
+- ps
+- png
+- svg
 - eps
 
-To save the figure in currrent working directory use the code. 
+To save the figure in currrent working directory use the code.
 
 ``` python 
 plt.savefig("myplot.png")
 ```
+
 To save the plot of topologist sine curve I have used the following 
 
 ``` python
@@ -221,6 +233,8 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
 
 - Multiple plots
 
+  We can plot more than one graphs togather as follows
+
   ``` python
   import numpy as np 
   import matplotlib.pyplot  as plt
@@ -230,13 +244,19 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
   b=np.cos(x)
   c=a+b
   
+  # plot all the graphs together and labels can
+  # be used to identify them
   plt.plot(x,a, label='sin(x)' )
   plt.plot(x,b, label='cos(x)')
   plt.plot(x,c, label='sin(x)+cos(x)')
+
+  # adding attributes to the plot
   plt.xlabel('x-axis', fontsize=20)
   plt.ylabel('y-axis', fontsize=20)
   plt.title('MULTIPLE GRAPH' ,fontsize=40)
   plt.legend()
+
+  # save and display the graph
   plt.savefig('multiplegraph.png')
   plt.show()
   ```
@@ -244,6 +264,8 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
   ![img](./image/multiplegraph.png)
 
 - Subplots
+
+    Subplot is used to plot more than one plots in a bigger plot.
 
 ## References
 

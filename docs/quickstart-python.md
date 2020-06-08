@@ -30,7 +30,7 @@ The strength of any programming language lies inside libraries, python has rich 
 
 #### Computers/Laptops
 
-Plese install anaconda python from the bottom of the following page according to your platform.
+Plese install anaconda python 3.x from the bottom of the following page according to your platform.
 
 [Download Anaconda Python](https://www.anaconda.com/products/individual)
 
@@ -44,3 +44,5 @@ In order to run a simple python program and test the installation please follow 
 1. Open the spyder app
 2. Type `python("hello world!)`
 3. You can see `hello world` printed in output window.
+
+![img](/image/spyder.png)
