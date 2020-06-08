@@ -193,11 +193,10 @@ import matplotlib.pyplot as plt
 x = np.linspace(-20, 20., 250)
 y = np.sin(x) / x
 
-
 plt.plot(x, y, color='red', linestyle='dashed')
 plt.xlabel("$x$-axis")
 plt.ylabel(r"$y = \frac{\sin(x)}{x}$")
-plt.legend([r"$f(x)=\tan(x^2)$"])
+plt.legend([r"$f(x)=\frac{\sin(x)}{x}$"])
 plt.title(r"Topologist Sine Curve")
 
 plt.show()
