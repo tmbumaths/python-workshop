@@ -89,6 +89,13 @@ print(roll_no, marks)
  30. 25. 27. 30. 24. 30. 28. 24. 30.]
 ```
 
+!!! tip
+    To skip any number of rows from the top we pass the `skiprows` as an optional arguments. For example to skip top two rows of the data we can use 
+
+    ``` python 
+    roll_no, marks = np.loadtxt("marks.csv", delimiter=',', skiprows=2, unpack=True)
+    ```
+
 ### Plotting data 
 
 Now we have imported the data from files as lists in python. Now we can plot using plot command, for example, the data from above files can be plotted using the following code 
@@ -180,7 +187,9 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 # getting the data in lists
-age_group, positive = np.loadtxt("agegroupcovid.csv", delimiter=',', skiprows=1, usecols=(0, 2), unpack=True)
+age_group = np.loadtxt("agegroupcovid.csv", delimiter=',', skiprows=1, usecols=(1), unpack=True, dtype=np.str)
+positive = np.loadtxt("agegroupcovid.csv", delimiter=',', skiprows=1, usecols=(2), unpack=True)
+
 
 # plotting the bar graph
 plt.bar(age_group, positive, color='red')
@@ -194,7 +203,7 @@ plt.title("COVID cases in each Age Group")
 plt.show()
 ```
 
-![img](./image/agegroup-covid.png)
+![img](./image/covid-bar.png)
 
 ### Pie Chart
 
