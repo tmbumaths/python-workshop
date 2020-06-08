@@ -45,4 +45,4 @@ In order to run a simple python program and test the installation please follow 
 2. Type `python("hello world!)`
 3. You can see `hello world` printed in output window.
 
-![img](/image/spyder.png)
+![img](./image/spyder.png)

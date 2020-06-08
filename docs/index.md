@@ -4,4 +4,4 @@ This page is dedicated to the faculty developemnt programme on python 3, organis
 
 ## The banner of the programme is the following
 
-![img](/image/banner.jpeg)
+![img](./image/banner.jpeg)

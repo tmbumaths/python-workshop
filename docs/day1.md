@@ -147,7 +147,7 @@ plt.plot(x,y)
 plt.show()
 ```
 
-![img](/image/simple-sine.png)
+![img](./image/simple-sine.png)
 
 **Ex:** Plot the following function in the interval $(1,10)$
 
@@ -203,7 +203,7 @@ plt.title(r"Topologist Sine Curve")
 plt.show()
 ```
 
-![img](/image/topologist-sine.png)
+![img](./image/topologist-sine.png)
 
 **Ex:** Draw a *plot* of *cosine graph* between $-2\pi$ to $2\pi$ with line thickness $4$ in blue colour.
 
