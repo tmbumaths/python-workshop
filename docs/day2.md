@@ -35,6 +35,15 @@ print(primes)
  523. 541.]
 ```
 
+!!! alert 
+    The data file `primes.txt` should be saved in the same folder where the python program is saved. Otherwise you have to provide the full path of the `primes.txt`. For example if you have downloaded this file in the android mobile then the path will be 
+
+    ``` python
+    primes = np.loadtxt("/storage/emulated/0/Download/primes.txt",  delimiter=", ")
+    ```
+
+    In general you can obtain the path from the details or properties of the stored file. 
+
 !!! warning
     The `loadtxt` function get only the data that can be converted into numbers. To get the data in other types we have to pass the type of data as an optional argument. For example to get data in strings we may use
 
