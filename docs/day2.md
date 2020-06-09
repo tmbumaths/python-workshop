@@ -8,21 +8,18 @@ To load the data from external text or CSV file we have to use `loadtxt` functio
 
 ### Single Column File
 
-A single comma separated row file can be read as the following. Let [primes.txt](./data/primes.txt) stores the data consist of first 100 prime numbers separated by comma.
-
-``` shell
-cat primes.txt
-```
+A single comma separated row file can be read as the following. Let [primes.txt](./data/primes.txt) stores the data consist of first 100 prime numbers separated by comma looks as the following
 
 ```
 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541
 ```
 
-To read this data and store all the values in a list named primes we use the following command
+To read this data and store all the values in a list named primes we use the following command, observe that data is separated by `,`.
 
 ``` python
 import numpy as np 
 
+# loading primes in list, delimiter is used to separate data 
 primes = np.loadtxt("primes.txt", delimiter=',')
 print(primes)
 ```
@@ -39,20 +36,19 @@ print(primes)
 ```
 
 !!! warning
-    The `loadtxt` function get only the data that can be converted into numbers. To get the data in other types we have to pass the type of data as an optional argument. For example
+    The `loadtxt` function get only the data that can be converted into numbers. To get the data in other types we have to pass the type of data as an optional argument. For example to get data in strings we may use
 
     ``` python
     age_group = np.loadtxt("fruits.txt",dtype=np.str)
     ```
 
+**Ex:** Download the [primes-exercise.txt](./data/primes-exercise.txt) and try to print the data as above. 
+
+**Ex:** Download the [statesandut.txt](./data/statesandut.txt) file contating the name of states and union terrotories of India and try to make list of this.
 
 ### Multi Columns File 
 
 Suppose we want to load a [marks.csv](./data/marks.csv) that consist of two columns with a header as follows
-
-``` shell
-head marks.csv
-```
 
 ``` shell
 Roll No.,Marks
@@ -65,6 +61,9 @@ Roll No.,Marks
 7,23
 8,22
 9,22
+ .
+ .
+ .
 ```
 
 To read each column as a separate list and skipping the first row, we can use the following,
@@ -72,6 +71,7 @@ To read each column as a separate list and skipping the first row, we can use th
 ``` python
 import numpy as np 
 
+# we pass the skiprow=1 to skip the first row
 roll_no, marks = np.loadtxt("marks.csv", delimiter=',', skiprows=1, unpack=True)
 print(roll_no, marks)
 ```
@@ -96,6 +96,12 @@ print(roll_no, marks)
     roll_no, marks = np.loadtxt("marks.csv", delimiter=',', skiprows=2, unpack=True)
     ```
 
+    To get a particular column we can pass the optional argument `userow` as follows
+
+    ``` python 
+    marks = np.loadtxt("marks.csv", delimiter=',', usecols=(1), useunpack=True)
+    ```
+
 ### Plotting data 
 
 Now we have imported the data from files as lists in python. Now we can plot using plot command, for example, the data from above files can be plotted using the following code 
@@ -116,7 +122,7 @@ plt.show()
 ![img](./image/marks.png)
 
 !!! tip
-    We can also apply some functions on any list and then plot them. 
+    We can also apply some functions on any list and then plot them.
 
 
 ## Other type of Plots
@@ -242,8 +248,10 @@ plt.show()
 
 ![img](./image/covid-pie.png)
 
+**Ex:** Make a plot of each type using any data of your choice. 
+
 ## Refrences
 
-1. [:material-file-outline: Official Docs on Loadtxt](https://numpy.org/doc/1.18/reference/generated/numpy.loadtxt.html)
-2. [:material-file-outline: Matplotlib Documentation](https://matplotlib.org/3.2.1/contents.html#)
-3. [:material-file-outline: Gallery Matplotlib](https://matplotlib.org/3.1.1/gallery/index.html)
+1. [:material-file: Official Docs on Loadtxt](https://numpy.org/doc/1.18/reference/generated/numpy.loadtxt.html)
+2. [:material-file: Matplotlib Documentation](https://matplotlib.org/3.2.1/contents.html#)
+3. [:material-file: Gallery Matplotlib](https://matplotlib.org/3.1.1/gallery/index.html)
