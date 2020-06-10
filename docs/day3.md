@@ -31,17 +31,22 @@ print(c)
 Each entry has an index or position in a list, which can be used to access them. As counting starts in pyton from `0`, So the first index is `0` and second index is `1` and so on.  
 
 ``` python 
-print(c[0], c[2])
+c = ['sandeep', 'suman', 2020, 7]
+print(c[0]) # to get the 0th element (count with 0)
+print(c[2]) # to get the 2nd element (count with 0)
+print(c[-1]) # count from last
 ```
 
 ``` shell
-sandeep 2020
+sandeep
+2020
+7
 ```
-
 
 ### Basic list operations
 
 - **Length:** The length of a list can be computed as follows
+
      ``` python
      len(c)
      ```
@@ -51,6 +56,7 @@ sandeep 2020
      ```
 
 - **Addition:** Two or more lists can be added with `+` operation as follows
+
      ``` python
      a = [1, 2]
      b = ["a", "b"]
@@ -63,6 +69,7 @@ sandeep 2020
      ```
 
 -  **Multiplication:** Repeatition can be achieved with `*` operation as follows
+
      ``` python
      a = ['Hi'] * 5
      print(a)
@@ -73,6 +80,7 @@ sandeep 2020
      ```
 
 - **Slicing:** A part of of list starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
+
      ``` python
      c = ["sandeep", "suman", 2020, 7]
      print(c[1:3])
@@ -87,6 +95,7 @@ sandeep 2020
 Stack is a data structure based on LIFO(Last in first out). 
 
 - **Append:** The `append` method on a list will add element in the end of the list.
+
      ``` python 
      L = []
      L.append(1) # 1 will be added to L
@@ -99,6 +108,7 @@ Stack is a data structure based on LIFO(Last in first out).
      ```
 
 - **Pop:** The `pop` method on list will remove the element from the last. 
+
      ``` python
      L = [1, 2]
      L.pop()
@@ -135,6 +145,7 @@ Stack is a data structure based on LIFO(Last in first out).
      ```
 
 - **Remove:** This method is used to remove an element in the list.
+
      ``` python
      L = ["apple", "mango", "orange"]
      L.remove("mango")
@@ -292,15 +303,18 @@ o s
      ```
 
 - **Slicing:** A part of of string starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
+
      ``` python
      c = "sandeep"
      print(c[1:4]) # start from 1st and end before 4th (counting starts with 0)
      print(c[4:])  # everything after 4th (counting starts with 0)
+     print(c[:4]) # to get the substring from start and end before 4th (counting starts with 0)
      ```
 
      ``` shell
      and
      eep
+     sand
      ```
 
 - **Extended Slicing:** The slicing in string is more flexible as it accepts more than two arguments. For example `X[1:10:2]` will get every other item in the substring `X[1:10]`
@@ -318,6 +332,133 @@ o s
      TlaajihgluUiest
      ytisrevinUruplagahBihjnaMakliT
      ```
+
+### String Methods
+
+Some of the string method is the following 
+
+- **Capitalize:** This method is used make first letter capital.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.capitalize())
+     ```
+
+     ``` shell
+     Welcome to faculty develpment programme.
+     ```
+
+- **Lower:** It will make every letter small.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.lower())
+     ```
+
+     ``` shell
+     welcome to faculty develpment programme.
+     ```
+
+- **Replace:** It will one substring with another.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.replace("M", "X")) # replace all M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelpXent prograXXE.
+     ```
+
+     To replace only one instance, we can pass one more argumnet. 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.replace("M", "X", 1)) # replace the first M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelpXent prograMME.
+     ```
+
+- **Find:** It will find one string in another string.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.find("to")) # finds the position of "to"
+     ```
+
+     ``` shell
+     8
+     ```
+
+     You can think of this as the following 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     position = msg.find("to") # positin of to
+     original = msg[:8] + "to" + msg[8+2:] # the original msg
+
+     print(original)
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelpMent prograMME.
+     ```
+
+- **Split:** The `split` method will convert a string to list of substring
+
+     ``` python 
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     L = msg.split() # default method will split at each whitespace
+     print(L)
+     ```
+
+     ``` shell
+     ['Welcome', 'to', 'FaculTy', 'DevelpMent', 'prograMME.']
+     ```
+
+     The `split` method is much more flexible. We can pass an argument to tell about the marker for split. 
+
+     ``` python
+     msg = "Amar,Akbar,Anthony"
+     L = msg.split(",") # split each part with ","
+     print(L)
+     ```
+
+     ``` shell
+     ['Amar', 'Akbar', 'Anthony']
+     ```
+
+- **Join:** The join method works opposite of split. We can make a string using the split method.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = " ".join(L) # the string in between will go before "."
+     print(msg)
+     ```
+
+     ``` shell
+     Amar Akbar Anthony
+     ```
+
+     If we want to join with `,` in all the elements of the list.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = ",".join(L)
+     print(msg)
+     ```
+
+     ``` shell
+     Amar,Akbar,Anthony
+     ```
+
+     **Ex:** Try to join the list L with comma and space.
+     **Ex:** Try to join in smaller latter. 
+
+!!! tip
+     There are huge number of list methods in python, and python programming is cosidered to be very powerful in list manupulation. You can google search to do any kind of list manupulation. 
 
 ### Membership and Interating a String
 
@@ -352,6 +493,9 @@ o s
 
 **Ex:** Write a program to check if the word 'orange' is present in the "This is orange juice".
 
+**Ex:** Convert the date written in the format "10/06/2020" to "10-06-2020".
+
+**Ex:** Convert "Tilka MaJHi BHaGalPUR UNIVersiYy" to "Tilka Manjhi Bhagalpur University".
 
 ## Refrences
 

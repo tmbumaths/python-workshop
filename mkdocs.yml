@@ -9,6 +9,12 @@ plugins:
   - minify:
       minify_html: true
 
+  - add-number:
+      strict_mode: False
+      order: 2
+      excludes:
+        - index.md
+
 
 theme:
   name: material
