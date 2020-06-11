@@ -19,7 +19,7 @@ from array import *
 ```
 
 !!! note 
-  We will use only the second method in this course.
+    We will use only the second method in this course.
 
 
 ### Creating Array elements
