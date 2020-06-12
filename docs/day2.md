@@ -259,7 +259,7 @@ plt.show()
 
 **Ex:** Make a plot of each type using any data of your choice. 
 
-## Refrences
+## References
 
 1. [:material-file: Official Docs on Loadtxt](https://numpy.org/doc/1.18/reference/generated/numpy.loadtxt.html)
 2. [:material-file: Matplotlib Documentation](https://matplotlib.org/3.2.1/contents.html#)

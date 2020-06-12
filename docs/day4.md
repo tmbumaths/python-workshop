@@ -329,7 +329,7 @@ print(b)
 
 The operation on numpy matrices are similar to the matrices we make using numpy arrays.
 
-## Refrences
+## References
 
 1. [:material-file: W3School on Numpy Array](https://www.w3schools.com/python/numpy_creating_arrays.asp)
 2. [:material-file: Numpy Matrices on Tutorials Point](https://www.tutorialspoint.com/numpy/numpy_matrix_library.htm)

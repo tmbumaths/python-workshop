@@ -497,7 +497,7 @@ Some of the string method is the following
 
 **Ex:** Convert "Tilka MaJHi BHaGalPUR UNIVersiYy" to "Tilka Manjhi Bhagalpur University".
 
-## Refrences
+## References
 
 1. [:material-file: W3School on List](https://www.w3schools.com/python/python_lists.asp)
 2. [:material-file: W3School on String](https://www.w3schools.com/python/python_strings.asp)
