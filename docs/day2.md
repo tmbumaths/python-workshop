@@ -53,7 +53,7 @@ print(primes)
 
 **Ex:** Download the [primes-exercise.txt](./data/primes-exercise.txt) and try to print the data as above. 
 
-**Ex:** Download the [statesandut.txt](./data/statesandut.txt) file contating the name of states and union terrotories of India and try to make list of this.
+**Ex:** Download the [statesandut.txt](./data/statesandut.txt) file containing the name of states and union terrotories of India and try to make list of this.
 
 ### Multi Columns File 
 
@@ -136,7 +136,7 @@ plt.show()
 
 ## Other type of Plots
 
-The default plot join all the points to make a plot which is not relevant all the time. For example joining all the points in the above graph doesn't make it relavant. Here we will see the examples of more types of plot in python. 
+The default plot join all the points to make a plot which is not relevant all the time. For example joining all the points in the above graph doesn't make it relevant. Here we will see the examples of more types of plot in python. 
 
 ### Scatter plot
 

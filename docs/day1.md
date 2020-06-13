@@ -216,7 +216,7 @@ In order to save the plot in the local directory we use `savefig` function. The
 - svg
 - eps
 
-To save the figure in currrent working directory use the code.
+To save the figure in current working directory use the code.
 
 ``` python 
 plt.savefig("myplot.png")
@@ -232,7 +232,7 @@ plt.savefig('/Users/ssuman/Downloads/topologist-sine.png', dpi=300, bbox_inches=
 
 - Multiple plots
 
-  We can plot more than one graphs togather as follows
+  We can plot more than one graphs together as follows
 
   ``` python
   import numpy as np 

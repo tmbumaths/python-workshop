@@ -146,7 +146,7 @@ Except the first **if** statement all other are optional. We can combine as many
     ``` python
     number = 55
     if number > 60:
-        print("1st Devision")
+        print("1st Division")
     ```
 
     ``` shell
@@ -158,7 +158,7 @@ Except the first **if** statement all other are optional. We can combine as many
     ``` python
     number = 55
     if number > 60:
-        print("1st Devision") 
+        print("1st Division") 
     else:
         print("Not 1st Division")
     ```
@@ -172,7 +172,7 @@ Except the first **if** statement all other are optional. We can combine as many
     ``` python 
     number = 37
     if number >= 60:
-        print("1st Devision") 
+        print("1st Division") 
     elif number >= 45:
         print("2nd Division")
     elif number >= 35:
@@ -259,7 +259,7 @@ print (sum) # finally print the sum
 
 #### Conditionally Controlling the loop
 
-The `for` loop does not require any ==test== to be performed in the code. But these are theree important cases where `for` is used with a condition. 
+The `for` loop does not require any ==test== to be performed in the code. But these are three important cases where `for` is used with a condition. 
 
 - **break:** It will terminates the loop based on a ==test==.
 
@@ -323,7 +323,7 @@ for val in numbers:  # this code will run each element of list
 
 ### Range Function
 
-In loops, **range** is used to control how many times the loop will be repeated. It is used to generate a finite sequence of natural numbers based on three arguemnts. First and last argument is optional. 
+In loops, **range** is used to control how many times the loop will be repeated. It is used to generate a finite sequence of natural numbers based on three arguments. First and last argument is optional. 
 
 The `range` function looks like 
 
@@ -354,7 +354,7 @@ So the range function can be used in three different ways
     4
     ```
 
-2. **Using start and stop:** We can use range function with two arguemnts `start` and `stop`. It will create a iterable of `stop - start` natural numbers with `start`. For example
+2. **Using start and stop:** We can use range function with two arguments `start` and `stop`. It will create a iterable of `stop - start` natural numbers with `start`. For example
 
     ``` python 
     for i in range(5, 10): # create iterable start with
@@ -369,7 +369,7 @@ So the range function can be used in three different ways
     9
     ```
 
-3. **Using start, stop and step:** When all three arguement used, it generate a iterable that will began with natural number `start` to `stop - 1` with a `step`. For example
+3. **Using start, stop and step:** When all three arguments used, it generate a iterable that will began with natural number `start` to `stop - 1` with a `step`. For example
 
     ``` python
     for i in range(1, 20, 3):

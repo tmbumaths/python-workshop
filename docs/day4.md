@@ -51,7 +51,7 @@ This will create a array with variable `a` contains five elements 1 to 5. Here `
 !!! tip
     You can convert any list of number to an array simply using `d` as in above code.
 
-### Acessing elements of array
+### Accessing elements of array
 
 - **Element:** To access the an element of the array `a`, we use the following command
 
@@ -87,7 +87,7 @@ This will create a array with variable `a` contains five elements 1 to 5. Here `
     ``` python
     import array as arr
     a = arr.array ('d' ,[1,2,3,4,5])
-    print(len(a)) # prints lenght of array a
+    print(len(a)) # prints length of array a
     ```
 
     ``` shell
@@ -147,7 +147,7 @@ This will create a array with variable `a` contains five elements 1 to 5. Here `
     ``` python 
     import array as arr
     a = arr.array ('d' ,[1.2,2,3.14,4,5])
-    a.insert(1, 2.73) # insert 2.73 at positon 1 (count with 0)
+    a.insert(1, 2.73) # insert 2.73 at position 1 (count with 0)
     print(a)
     ```
 
@@ -155,7 +155,7 @@ This will create a array with variable `a` contains five elements 1 to 5. Here `
     array('d', [1.2, 2.73, 2.0, 3.14, 4.0, 5.0])
     ```
 
-- **pop:**  It is used when you want to remove an element and return it. We can provide optional arguement to remove an element with given index. 
+- **pop:**  It is used when you want to remove an element and return it. We can provide optional argument to remove an element with given index. 
 
     ``` python
     import array as arr
@@ -187,7 +187,7 @@ This will create a array with variable `a` contains five elements 1 to 5. Here `
 
 ### Looping through an array
 
-Similar to list and string we can use for loops or while loops to go throuth each elements of a list one by one.
+Similar to list and string we can use for loops or while loops to go through each elements of a list one by one.
 
 - **for** To  iterates over the items of an array specified we can use for as follows
 
@@ -210,11 +210,11 @@ Similar to list and string we can use for loops or while loops to go throuth eac
 
 ## Matrices in Python
 
-Matrices in python can be achived using one of the following ways
+Matrices in python can be achieved using one of the following ways
 
 - Nested Lists
 - Numpy Arrays
-- Numpy Matices
+- Numpy Matrices
 
 Now we will learn them one by one 
 
