@@ -1,7 +1,7 @@
-site_name: FDP Python 3
-site_description: 'This page is dedicated the faculty developemnt programme organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: Python Programming Workshop
+site_description: 'This page is dedicated the workshop on introductory python programming language, organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/fdp-python-2020/'
+site_url: 'https://sandeepsuman.com/python-workshop/'
 
 plugins:
   - search
@@ -17,6 +17,20 @@ plugins:
 
 
 theme:
+  palette:
+    - scheme: default
+      primary: green
+      accent: yellow
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: yellow
+      accent: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
   name: material
   custom_dir: 'theme'
   features:
@@ -27,10 +41,6 @@ theme:
     logo: material/library
     repo: fontawesome/brands/git-alt
 
-
-  palette:
-    primary: 'blue-grey'
-    accent: 'teal'  
 
   font:
     text: 'Ubuntu'

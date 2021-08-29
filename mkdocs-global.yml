@@ -1,7 +1,7 @@
-site_name: FDP Python 3
-site_description: 'This page is dedicated the faculty developemnt programme organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
+site_name: Python Programming Workshop
+site_description: 'This page is dedicated the workshop on introductory python programming language, organised by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.'
 site_author: 'Sandeep Suman'
-site_url: 'https://sandeepsuman.com/fdp-python-2020/'
+site_url: 'https://sandeepsuman.com/python-workshop/'
 
 plugins:
   - search
@@ -16,16 +16,29 @@ plugins:
         - index.md
 
 theme:
+  palette:
+    - scheme: default
+      primary: green
+      accent: yellow
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: yellow
+      accent: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
   name: material
   custom_dir: 'theme'
+  features:
+    - instant
+    - tabs
 
   icon:
     logo: material/library
     repo: fontawesome/brands/git-alt
-
-  palette:
-    primary: 'blue-grey'
-    accent: 'teal'  
 
   font:
     text: 'Ubuntu'
@@ -34,7 +47,7 @@ theme:
   static_templates:
     - 404.html
     
-  favicon: '/fdp-python-2020/static/images/favicon.ico'
+  favicon: '/python-workshop/static/images/favicon.ico'
 
 markdown_extensions:
   - admonition
@@ -68,10 +81,10 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - '/fdp-python-2020/static/js/app.js'
+  - '/python-workshop/static/js/app.js'
 
 extra_css:
-  - '/fdp-python-2020/static/stylesheets/extra.css' # depends on theme
+  - '/python-workshop/static/stylesheets/extra.css' # depends on theme
 
 
 google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
