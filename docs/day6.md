@@ -1,219 +1,337 @@
+<iframe width="704" height="396" src="https://www.youtube.com/embed/Y8ZbnUh0djg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# DAY 6
+# Day 6
 
-Today we will learn about functions in programming. The functions in programming is similar to mathematical functions which takes input and produce output. But the main idea of function in programming is inspired by one of guiding principle of programming known as ==don't repeat yourself==, also known as ==DRY==. So if some part of code is needs to be written again and again then it means that we can convert this into a function as use them. 
+Today we will learn about two important data types of numpy library which is similar to vecotrs and matrices. Array and matrices stores data similar to lists but they suitable for mathematical operations like dot product and matrix multiplication. 
 
 [TOC]
 
-## General Theory
+## Array
 
-Functions are the foundation of higher level programming language. There are programming language which implements everything based on functions only those are called ==functional programming language==. Although modern languages implement a more abstract thing known as ==object== which is composed of data and methods(function associated with the data). Such programming language are called ==object oriented programming language==, and python is one of them.
+Here we will learn about array which is similar to vectors in mathematics.
+  
+### Importing array 
 
-Recall what have you done till now, you realize everything is a function. For example 
-
-1. **Variables:** If we assign a variable to some value say `name = "sandeep"`, then we make a function `name` and when we call `name` we get its value, i.e., `"sandeep"`.
-2. **Operations:** From mathematics we know that operations are actually functions. 
-3. **Control Structure:** You can think of it as it takes one or more `boolean` and assign a value.
-
-Two main usage of function is the following:
-
-1. **Maximizing Code Reuse and Minimizing Redundancy**
-
-    As I have already mentioned if we use some block of code again and again, we can convert this into a function used it. It is not limited to one program, a complex function written for one program can be used in many programs. *Libraries and  modules* are example of such application.
-
-2. **Procedural Decomposition**
-
-    A complex task can be achieved by using a number of small task in a sequence. We can make each such small independent task as it's own function. When we combine all of them, we get our original task. This make the *code* easy to use, extend and debug.
-
-## Python Function
-
-Now we will see how function is implemented in python language. 
-
-### General Structure
-
-A general python function has a name for reference. It takes 0 to some finite number of inputs or arguments. It executes some block of code using those arguments. Finally it will return only one value. Return is also optional, you may want to return something or just carry some task without saying anything.
-
-The template of a general *python function* is the following
+Similar to other python library we can import array as the following methods
 
 ``` python
-def <name> (arg1, arg2, ..., argN): # function with name takes N arguments
-    <statements>    # block of code executed with arguments
-    return <value>  # a value is returned at the end
+import array
+import array as arr
+from array import *
 ```
 
-### Simple Functions
+!!! note 
+    We will use only the second method in this course.
 
-Now let's look at some concrete examples
 
-1. **Function with no arguments**
+### Creating Array elements
 
-    It is quite possible to have a python function with no argument at all. It works a complex variable. For example
+To make an array in python we use the following functions.
+
+``` python 
+import array as arr
+a = arr.array ('d' ,[1,2,3,4,5])
+print(a)
+```
+
+This will create a array with variable `a` contains five elements 1 to 5. Here `d` denote the data type of float. For other datatype you can use the following table.
+
+| Code | C Type         | Python Type | Min bytes |
+|------|----------------|-------------|-----------|
+| b    | signed char    | int         | 1         |
+| B    | unsigned char  | int         | 1         |
+| u    | Py_UNICODE     | Unicode     | 2         |
+| h    | signed short   | int         | 2         |
+| H    | unsigned short | int         | 2         |
+| i    | signed int     | int         | 2         |
+| I    | unsigned int   | int         | 2         |
+| l    | signed long    | int         | 4         |
+| L    | unsigned long  | int         | 4         |
+| f    | float          | float       | 4         |
+| d    | double         | float       | 8         |
+
+!!! tip
+    You can convert any list of number to an array simply using `d` as in above code.
+
+### Accessing elements of array
+
+- **Element:** To access the an element of the array `a`, we use the following command
 
     ``` python
-    def light_year():
-        speed_of_light = 299792458
-        return speed_of_light * 365 * 24 * 60 * 60 
-
-    print(light_year())
+    import array as arr
+    a = arr.array ('d' ,[1,2,3,4,5])
+    print(a[2])  # counting starts with 0
+    print(a[-2]) # count from last
     ```
 
     ``` shell
-    9454254955488000
+    3
+    4
     ```
 
-    Now we can use light year as a variable.
-
-2. **Function with few arguments**
-
-    Now let's look at some typical python function
+- **Slicing:** Similar to the list and strings we can obtain a continuous part of an array
 
     ``` python
-    def greet(arg):
-        return "Hello " + arg   # whatever it takes add a hello to it
+    import array as arr
 
-    print(greet("Sandeep Suman"))
+    a=arr.array('d', [6.8, 5.9, 9.8, 2.4, 3.3])
+    print(a[1:3]) # prints the part of array start with index 1 and end before 3
     ```
 
     ``` shell
-    Hello Sandeep Suman
+    array('d', [5.9, 9.8])
     ```
 
-    ``` python
-    def prod(x, y):
-        return x * y
+### Basic Array operations
 
-    print(prod(2, 5))     # product of number
-    print(prod("Hi!", 3)) # product as string
+- **len:** Length of an array can be computed using `len` function as follows
+
+    ``` python
+    import array as arr
+    a = arr.array ('d' ,[1,2,3,4,5])
+    print(len(a)) # prints length of array a
     ```
 
     ``` shell
-    10
-    Hi!Hi!Hi!
+    5
     ```
 
-    !!! note
-        You can see that function takes care of the datatypes. 
-
-3. **Using one function inside other**
-
-    We can also use one function inside other as following
+- **Concatenation:** We can join two array with `+` operation.
 
     ``` python
-    def greet(arg):
-        return "Hello " + arg + "."   
+    import array as arr
 
-    def reading(name, subject):
-        return greet(name) + " Do you want to learn " + subject + "?"
-
-    print(reading("Sandeep", "Python"))
-    print(reading("Suman", "Mathematics"))
+    a = arr.array('d',[1.2, 5.8, 6.4])
+    b = arr.array('d',[1.3, 6])
+    c = a + b # array c will have elements of a and b
+    print(c)
     ```
 
     ``` shell
-    Hello Sandeep. Do you want to learn Python?
-    Hello Suman. Do you want to learn Mathematics?
+    Array c =  array('d', [1.2, 5.8, 6.4, 1.3, 6.0])
     ```
 
-4. **Using control structure and loops**
+### Method on array
 
-    You can combine all your knowledge till now to make more and more complex functions. A function for computing the absolute value of a number is the following:
+- **append:** Similar to the list the append is used to add a single element at the end of an array.
 
     ``` python
-    def abs_number(num):
-        if num >= 0:
-            return num
-        else:
-            return (-1) * num
-
-    print(abs_number(53))
-    print(abs_number(0))
-    print(abs_number(-3.14))
+    import array as arr
+    a = arr.array ('d' ,[1,2,3,4,5])
+    a.append(23) # appends 23 at the end of array a
+    print(a)
     ```
 
     ``` shell
-    53
-    0
-    3.14
+    array('d', [1.0, 2.0, 3.0, 4.0, 5.0, 23.0])
     ```
 
-    A function to compute the sum of all elements of a list can be written as 
+- **extend:** It is used when you want to add more than one element at the end of an array.
 
     ``` python
-    def sum_list(given_list):
-        sum = 0
-        for val in given_list:
-            sum = sum + val
-
-        return sum
-
-    print(sum([1, 2, 3])) # sum of all element of list
-    print(sum(range(51))) # sum of first 50 natural no
+    import array as arr
+    a = arr.array ('d' ,[4,5])
+    a.extend([23, 4.15, 6.7]) # extend array a using list
+    print(a)
+    b = arr.array ('d' ,[23, 4.15, 6.7])
+    a.extend(b) # extend array a using another array b
+    print(a)
     ```
 
     ``` shell
-    6
-    1275
+    array('d', [4.0, 5.0, 23.0, 4.15, 6.7])
+    array('d', [4.0, 5.0, 23.0, 4.15, 6.7, 23.0, 4.15, 6.7])
     ```
 
-### Recursive Function
 
-Similar to mathematics recursive function are those function which call themselves. A simple example is *factorial*.
+- **insert:** - used when you want to add an element at a specific position in an array.
 
-``` python
-def fact(n):
-    if n == 0: # base case
-        return 1
-    else:      # general case
-        return n * fact(n - 1)
+    ``` python 
+    import array as arr
+    a = arr.array ('d' ,[1.2,2,3.14,4,5])
+    a.insert(1, 2.73) # insert 2.73 at position 1 (count with 0)
+    print(a)
+    ```
 
-print(fact(0))
-print(fact(1))
-print(fact(3))
-print(fact(10))
+    ``` shell 
+    array('d', [1.2, 2.73, 2.0, 3.14, 4.0, 5.0])
+    ```
+
+- **pop:**  It is used when you want to remove an element and return it. We can provide optional argument to remove an element with given index. 
+
+    ``` python
+    import array as arr
+    a = arr.array('d', [4, 3, 5, 6.7, 3.5])
+    print(a.pop()) # remove the last element
+    print(a.pop(1)) # remove index 1 element (count with 0)
+    print(a)
+    ```
+
+    ``` shell
+    3.5
+    3.0
+    array('d', [4.0, 5.0, 6.7])
+    ```
+
+- **remove:** : It is used when you want to remove an  element with a specific value  without returning it.
+
+    ``` python
+    import array as arr
+    a = arr.array('d', [4, 3, 5, 6.7, 3.5])
+    print(a.remove(5)) # remove element 5, but produce no output
+    print(a) # prints array a after removing element 5
+    ```
+
+    ``` shell
+    None
+    array('d', [4.0, 3.0, 6.7, 3.5])
+    ```
+
+### Looping through an array
+
+Similar to list and string we can use for loops or while loops to go through each elements of a list one by one.
+
+- **for** To  iterates over the items of an array specified we can use for as follows
+
+    ``` python
+    import array as arr
+
+    a = arr.array('d', [6.8, 5.9, 9.8, 2.4, 3.3])
+    for i in a:
+        # you can use each element on your desire
+        print(i**2) # printing square of each element
+    ```
+
+    ``` shell
+    46.239999999999995
+    34.81
+    96.04000000000002
+    5.76
+    10.889999999999999
+    ```
+
+## Matrices in Python
+
+Matrices in python can be achieved using one of the following ways
+
+- Nested Lists
+- Numpy Arrays
+- Numpy Matrices
+
+Now we will learn them one by one 
+
+### Nested List
+
+We can used nested list to store data similar to matrices. 
+
+``` python 
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix)
 ```
 
 ``` shell
-1
-1
-6
-3628800
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 ```
 
-**Ex:** Make your own function of each type and implement them in python.
+!!! warning
+    Nested list doesn't work similar to matrices in mathematics. They are simply table and operations are limited by list functions. 
 
-!!! quote "End of this course"
+### Numpy Arrays
 
-    Congratulations!!!
+Similar to nested list, we can use array inside array to store data in matrices.
 
-    We have come at the end of this course. You have certainly learned something if you have followed the course till now. This is just the basic. There is no limit in python programming, and we shouldn't expect to learn a lot in one week. This course is meant to just give you a start. Please continue your learning with the different resources available. 
-    
-    I have included the guiding principle for python programming refereed as ==the zen of python==. Go thorough them and try to use them. 
+``` python
+import numpy as np
 
-## The Zen of Python
+a = np.array([[1.2, 2.1],[3.6, 4.3]])
+print(a)
+```
 
-Tim Peters wrote this set of guiding principles and posted it on the Python mailing list in 1999. Actually there are 20 of them, but only 19 were documented. 
+``` shell
+[[1.2 2.1]
+[3.6 4.3]]
+```
 
-1. Beautiful is better than ugly.
-2. Explicit is better than implicit.
-3. Simple is better than complex.
-4. Complex is better than complicated.
-5. Flat is better than nested.
-6. Sparse is better than dense.
-7. Readability counts.
-8. Special cases aren't special enough to break the rules.
-9. Although practicality beats purity.
-10. Errors should never pass silently.
-11. Unless explicitly silenced.
-12. In the face of ambiguity, refuse the temptation to guess.
-13. There should be one-- and preferably only one --obvious way to do it.
-14. Although that way may not be obvious at first unless you're Dutch.
-15. Now is better than never.
-16. Although never is often better than *right* now.
-17. If the implementation is hard to explain, it's a bad idea.
-18. If the implementation is easy to explain, it may be a good idea.
-19. Namespaces are one honking great idea -- let's do more of those!
+#### Operation on matrices
 
-## References 
+- **Addition:** We use `+` to achieve addition of similar size matrices. 
 
-1. [:material-file: W3School on Python Functions](https://www.w3schools.com/python/python_functions.asp)
-2. [:material-file: Wikipedia The ZEN of Python](https://en.wikipedia.org/wiki/Zen_of_Python)
+    ``` python
+    import numpy as np
+
+    a = np.array([[1, 2], [3, 4]])
+    b = np.array([[10, 20], [30, 40]])
+    print(a + b)
+    ```
+
+    ``` shell
+    [[11 22]
+    [33 44]]
+    ```
+
+- **Matrix multiplication:** We use `*` to achieve addition of similar size matrices. 
+
+    ``` python
+    import numpy as np
+
+    a = np.array([[1, 2], [3, 4]])
+    b = np.array([[10, 20], [30, 40]])
+    print(a * b)
+    ```
+
+    ``` shell
+    [[ 10  40]
+    [ 90 160]]
+    ```
+
+- **Transpose:** We can transpose a matrix using the `transpose` function of `numpy` library. 
+
+    ``` python
+    import numpy as np
+
+    a = np.array([[1,2,3],[4,5,6]])
+    print(a)
+    print(np.transpose(a))
+    ```
+
+    ``` shell
+    [[1 2 3]
+    [4 5 6]]
+    [[1 4]
+    [2 5]
+    [3 6]]
+    ```
+
+### Numpy Matrices
+
+Numpy matrix is a class in nunpy library to handle matrices and mathematical operations related to them. 
+
+
+#### creating a matrix from a string
+
+The main advantage of this class is that it has flexible method of creating matrices and slicing them. 
+
+``` python
+import numpy as np
+
+a = np.matrix("1, 2; 3, 4")
+b = np.matrix([[10, 20],[30, 40]])
+print(a)
+print(b)
+```
+
+``` shell
+[[1 2]
+ [3 4]]
+[[10 20]
+ [30 40]]
+```
+
+#### Operations on Numpy Matrices
+
+The operation on numpy matrices are similar to the matrices we make using numpy arrays.
+
+## References
+
+1. [:material-file: W3School on Numpy Array](https://www.w3schools.com/python/numpy_creating_arrays.asp)
+2. [:material-file: Numpy Matrices on Tutorials Point](https://www.tutorialspoint.com/numpy/numpy_matrix_library.htm)

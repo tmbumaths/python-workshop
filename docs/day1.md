@@ -1,3 +1,5 @@
+<iframe width="704" height="396" src="https://www.youtube.com/embed/QhUP9d9qAXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Day 1
 
 The agenda of today is the following.

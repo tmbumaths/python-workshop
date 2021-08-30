@@ -1,416 +1,507 @@
+<iframe width="704" height="396" src="https://www.youtube.com/embed/BKZpC3Fm5IE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# DAY 5
-
-Today we will learn about control structure and loops. Control structure and loops are fundamental concept in programming. Hence they are implemented in every programmming language. Actully these concepts make a programming language different from calculators. 
+# Day 5
 
 [TOC]
 
-## Boolean
+## List
 
-Since we have seen that control structure depends on ==test==. Test is nothing but a statement in pyton whose value is either `True` or `False` but not together. For this we have a data type in python to represent this, known as boolean data type. 
+Till now we are using list to store data and plot them. Now today we will learn about it extensively. List is a data structure, means a way to store and access data. So today we will learn how to store and access data in list data structure. 
 
-### Assigning Boolean Data
+- a list is a collection of data in a finite sequence.
+- it can hold values of multiple datatype, i.e., one entry can be integer, other can float or string.
+
+### Creating lists
+
+A list is created using a square bracket as follows,
 
 ``` python
-test1 = True
-test2 = False
-print(test1)
-print(test2)
+a = [] # an empty list
+b = [1,2,3,4,5] # list of numbers
+c = ["sandeep", "suman", 2020, 7] # mix datatypes
+d = [["sandeep", "suman"], 2020, []] # list inside list
+
+print(c)
 ```
 
 ``` shell
-True
-False
+['sandeep', 'suman', 2020, 7]
 ```
 
-Many relational operation result in boolean in pyton. For example if we ask following questions?
+### Accessing data inside list
 
-``` python
-test1 = 5 >= 0     # True
-test2 = 5 < 0      # False
-test3 = 6 == 3     # False
-test4 = (6/2 == 3) # Ture, use bracket for better looks
-print(test1)
-print(test2)
-print(test3)
-print(test4)
-```
-
-``` shell
-True
-False
-False
-True
-```
-
-We can also check some variable has a particular value or not using this idea. 
-
-``` python
-f_name = "Sandeep"
-l_name = "Suman"
-full_name = f_name + " " + l_name
-test1 = (full_name == "Sandeep Suman") 
-print(test1)
-```
-
-``` shell
-True
-```
-
-### Boolean Operations
-
-Boolean data has three main operation. Others are combination of them
-
-- **not:** It interchange the value of boolean between `True` and `False`.
-- **or:** It takes the logical `or` operation between two boolean statements.
-- **and:** It takes the logical `and` operation between two boolean statements.
-
-The result can be summarized in a table as follows
-
-| A | B | not A | not B | A == B | A =! B | A or B | A and B |
-|---|---|-------|-------|--------|--------|--------|---------|
-| T | F | F     | T     | F      | T      | T      | F       |
-| F | T | T     | F     | F      | T      | T      | F       |
-| T | T | F     | F     | T      | F      | T      | T       |
-| F | F | T     | T     | T      | F      | F      | F       |
+Each entry has an index or position in a list, which can be used to access them. As counting starts in python from `0`, So the first index is `0` and second index is `1` and so on.  
 
 ``` python 
-f_name = "Sandeep"
-l_name = "Suman"
-full_name = f_name + " " + l_name
-test1 = (full_name == "Sandeep Suman") # True 
-test2 = not test1                      # not True = False
-test3 = (full_name == "Sandeep Suman") or (5 <= 0)  # True OR  False = True
-test4 = (full_name == "Sandeep Suman") and (5 <= 0) # True AND False = False
-print(test1)
-print(test2)
-print(test3)
-print(test4)
+c = ['sandeep', 'suman', 2020, 7]
+print(c[0]) # to get the 0th element (count with 0)
+print(c[2]) # to get the 2nd element (count with 0)
+print(c[-1]) # count from last
 ```
 
 ``` shell
-True
-False
-True
-False
+sandeep
+2020
+7
 ```
 
-## Conditional Statements
+### Basic list operations
 
-Till now all the lines of a program run one by one. The control structure will enable us to run a line based on a ==test==. 
+- **Length:** The length of a list can be computed as follows
 
-### General Structure 
+     ``` python
+     len(c)
+     ```
 
-The structure of general control struructure in python(or in any programming language) will look like the following:
+     ``` shell
+     4
+     ```
 
-``` python
-if <test1>:
-    <statement1>
-elif <test2>:
-    <statement2>
-    .
-    .
-    .
-else:
-    <final statement>
-```
+- **Addition:** Two or more lists can be added with `+` operation as follows
 
-The situation can graphically represented as the following diagram
+     ``` python
+     a = [1, 2]
+     b = ["a", "b"]
+     c = a + b
+     print(c)
+     ```
 
-![General If Statement](./image/general-if-statement.svg)
+     ``` shell
+     [1, 2, 'a', 'b']
+     ```
 
-If we look at another perspective we can think this as the following sequnce of tests
+-  **Multiplication:** Repetition can be achieved with `*` operation as follows
 
-![sequencial if statement](./image/sequencial-test.svg)
+     ``` python
+     a = ['Hi'] * 5
+     print(a)
+     ```
 
-When the i-th test fails, then program check for (i+1)-th test and so on. If any test say k-th one will pass then the program will run the k-th statement will run and program will exit this control structure. If all the statement fails the program will run the final statement nested under `else`. 
+     ``` shell
+     ['Hi', 'Hi', 'Hi', 'Hi', 'Hi']
+     ```
 
-### Implementation 
+- **Slicing:** A part of of list starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
 
-Except the first **if** statement all other are optional. We can combine as many test as we want. 
+     ``` python
+     c = ["sandeep", "suman", 2020, 7]
+     print(c[1:3])
+     ```
 
-- **One Test:** The smallest possible program with `if` statement can written as following
+     ``` shell
+     ['suman', 2020]
+     ```
 
-    ``` python
-    number = 77
-    if number > 60:  # colon represent a block in python
-        print("1st Devision") # each block need to be indented by 4 whitespace
-    ```
+### List as Stack
 
-    ``` shell
-    1st Devision
-    ```
+Stack is a data structure based on LIFO(Last in first out). 
 
-    The output is expected. But even if the number $\leq 60$, we will not get any output because the code has no `else` statement.
+- **Append:** The `append` method on a list will add element in the end of the list.
 
-    ``` python
-    number = 55
-    if number > 60:
-        print("1st Division")
-    ```
+     ``` python 
+     L = []
+     L.append(1) # 1 will be added to L
+     L.append(2) # 2 will be added to L
+     print(L)
+     ```
 
-    ``` shell
+     ``` shell
+     [1, 2]
+     ```
 
-    ```
+- **Pop:** The `pop` method on list will remove the element from the last. 
 
-- **If...else:** We can combine `else` to catch the program when test fails as follows
+     ``` python
+     L = [1, 2]
+     L.pop()
+     print(L)
+     ```
 
-    ``` python
-    number = 55
-    if number > 60:
-        print("1st Division") 
-    else:
-        print("Not 1st Division")
-    ```
+     ``` shell
+     [1]
+     ```
 
-    ``` shell
-    Not 1st Division
-    ```
+     The method `pop` also takes addition argument to remove element from any given index.
 
-- **Elif:** More than one test can be used using `elif` statement. 
+     ``` python
+     L = [1, 2]
+     L.pop(0) # removes the element with index 0
+     print(L)
+     ```
 
-    ``` python 
-    number = 37
-    if number >= 60:
-        print("1st Division") 
-    elif number >= 45:
-        print("2nd Division")
-    elif number >= 35:
-        print("Third Division")
-    else:
-        print("Fail")
-    ```
+     ``` shell
+     [2]
+     ```
 
-    ``` shell
-    Third Division
-    ```
+### Other method on list
 
-    **Ex:** Change the number to get each type of output.
+- **Index:** This method is used to get the index of an element.
 
-**Ex:** Write a program that will give the grade of a student based on marks. You can use any criteria for grade.
+     ``` python
+     L = ["apple", "mango", "orange"]
+     i = L.index("mango")
+     print(i)
+     ```
 
-## Loops
+     ``` shell
+     1
+     ```
 
-Loops are used to run a block of code again and again based on some condition. There are two kinds of loops most programming language have. 
+- **Remove:** This method is used to remove an element in the list.
 
-- **While Loop**
-- **For Loops**
+     ``` python
+     L = ["apple", "mango", "orange"]
+     L.remove("mango")
+     print(L)
+     ```
 
-### While loop
+     ``` shell
+     ['apple', 'orange']
+     ```
 
-In python `while` loop is used to run a block of code again and again till a ==test== is true. A simple example of such code is the following.
+- **Reverse:** This method will reverse the elements of the given list.
 
-```python
-i = 1
+     ``` python
+     L = ["apple", "mango", "orange"]
+     L.reverse()
+     print(L)
+     ```
 
-while i < 6: # code in this block run repeatedly
-    print(i) 
-    i += 1
-```
+     ``` shell
+     ['orange', 'mango', 'apple']
+     ```
 
-```python
-   >>>1
-      2
-      3
-      4
-      5
-```
+- **Sort:** This method is used to sort the elements of a list. 
+
+     ``` python
+     L = [4, 6, 2, 7, 1, 3]
+     L.sort()
+     print(L)
+     ```
+
+     ``` shell
+     [1, 2, 3, 4, 6, 7]
+     ```
+
+!!! tip 
+     The maximum element of a list can be obtained using sort taking in the last element. i.e.,
+
+     ``` python
+     L = [4, 6, 2, 7, 1, 3]
+     L.sort()
+     max = L[-1]
+     print(max)
+     ```
+
+     ``` shell
+     7
+     ```
+
+### Membership and Iterating of a List
+
+- Like the membership in the set. We can tell if something is inside a list or not as follows
+
+     ``` python
+     L = ["apple", "mango", "orange"]
+     print("apple" in L)
+     print("guava" in L)
+     ```
+
+     ``` shell
+     True
+     False
+     ```
 
 
-### For Loop
+- Often in programming we want look for each element of a list one by one from start to finish. The process is generally known as `iteration` in programming.
 
-A **for** loop in python is used to iterate over a sequence (list ,tuple, string) or other iterable objects.
+     A simple program to iterate a list is as follows
 
-A simple for loop to print each element of the following
+     ``` python
+     fruits = ["apple", "mango", "orange"]
+     for i in fruits: # semicolon is used to make code block
+          print(i)    # 4 space is used here !important
+     ```
+
+     ``` shell
+     apple
+     mango
+     orange
+     ```
+
+## Strings
+
+String is one the basic datatypes of the python language. There are many ways to define a string but we use the most common method by writing a sentence or paragraph inside single(`'`) or double(`"`) quotes.
 
 ``` python 
-numbers = [6, 5, 3, 8, 4, 2, 5] # given list for iteration
-
-for val in numbers: # this code block will run for 
-    print(val)      # each element of iterable	
+mystring = "python is awesome"
+mystring = 'python is awesome'
+print(mystring)
 ```
 
 ``` shell
-6
-5
-3
-8
-4
-2
-5
+python is awesome
 ```
-
-A common situation in which `for` loop is used to store the value of a computation for each element of a list. Suppose we want to find sum of each element of a list, then we can write the following code.
-
-```python
-numbers = [6, 5, 3, 8, 4, 2, 5] # given iterable
-sum = 0  # final value will be stored in sum
-
-for val in numbers: # this code will run each element of list	
-    sum = sum + val # we add each element in our sum variable
-
-# after leaving for loop look at indentation
-print (sum) # finally print the sum
-```
-
-```python
-33
-```
-
-#### Conditionally Controlling the loop
-
-The `for` loop does not require any ==test== to be performed in the code. But these are three important cases where `for` is used with a condition. 
-
-- **break:** It will terminates the loop based on a ==test==.
-
-    A common use case is suppose you want to search for some property of element of a list. Then we will break the loop once the condition is met. For example suppose we are looking for number `5` in the given list of numbers.
-
-    ``` python
-    numbers = [6, 5, 3, 8, 4, 2, 5] # given iterable
-
-    for val in numbers: # this code will run each element of list	
-        if val == 3:    # the for loop will run until this test is satisfied
-            break
-        print(val)
-    ```
-
-    ``` shell
-    6
-    5
-    ```
-
-!!! important 
-    You can see that the code will run until the test is satisfied for the first time. 
-
-- **continue:** It is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate but continues on with the next iteration.
-
-A common situation is suppose we want to print odd integers only in a given list, then we can skip a code block for even integer as follows
-
-``` python
-numbers = [6, 5, 3, 8, 4, 2,5] # given iterable
-
-for val in numbers:  # this code will run each element of list	
-    if val % 2 == 0: # checks for even value and  
-        continue     # leave the current iteration
-    print(val)
-```
-
-``` shell
-5
-3
-5
-```
-
-- **pass:** It is a null statement. The statements results into no operation. when it is executed,nothing happens. It is useful as a placeholder,when a statement is required syntactically,but no codes need to be executed.
-
-For example we can achieve the above task with the following code with `pass`.
-
-```python
-numbers = [6, 5, 3, 8, 4, 2,5] # given iterable
-
-for val in numbers:  # this code will run each element of list	
-    if val % 2 == 0: # checks for even value and  
-        pass         # leave the current iteration
-    else:
-        print(val)
-```
-
-```shell
-5
-3
-5
-```
-
-### Range Function
-
-In loops, **range** is used to control how many times the loop will be repeated. It is used to generate a finite sequence of natural numbers based on three arguments. First and last argument is optional. 
-
-The `range` function looks like 
-
-``` python
-range(start, stop, step)
-```
-
-- **start** states the integer value at which the sequence begins, if this is not included then start begins at 0
-
-- **stop** is always required and is the integer that is counted up to but not included
-
-- **step** sets how much to increase (or decrease in the case of negative numbers) the next iteration, if this is omitted then step defaults to 1
-
-So the range function can be used in three different ways
-
-1. **Using Stop Only:** We can use the range as only one argument as a positive natural number say `n`. It will make a iterable of `n` natural numbers starting with `0`. For example 
-
-    ``` python
-    for i in range(5):
-        print(i)
-    ```
-
-    ``` shell
-    0
-    1
-    2
-    3
-    4
-    ```
-
-2. **Using start and stop:** We can use range function with two arguments `start` and `stop`. It will create a iterable of `stop - start` natural numbers with `start`. For example
-
-    ``` python 
-    for i in range(5, 10): # create iterable start with
-        print(i)           # 5 of length 10 - 5 = 5
-    ```
-
-    ``` shell
-    5
-    6
-    7
-    8
-    9
-    ```
-
-3. **Using start, stop and step:** When all three arguments used, it generate a iterable that will began with natural number `start` to `stop - 1` with a `step`. For example
-
-    ``` python
-    for i in range(1, 20, 3):
-        print(i)
-    ```
-
-    ``` shell
-    1
-    4
-    7
-    10
-    13
-    16
-    19
-    ```
 
 !!! warning
-    The `range` doesn't make a list. i.e., if you run this code the output will not be a sequence. 
-    ```python
-    sequence = range(1, 20, 3)
-    print(sequence)
-    ```
+     Even numbers in single or double quotes behaves as an string.
 
-    ``` shell 
-    range(1, 20, 3)
-    ```
+     ``` python
+     temp = "38.7"
+     print(type(temp))
+     ```
 
-    In order to get the list. You have to pass this iterable in `list` function.
+     ``` shell
+     <class 'str'>
+     ```
 
-    ``` python
-    sequence = range(1, 20, 3)
-    list_sequence = list(sequence)
-    print(list_sequence)
-    ```
+### Accessing data inside list
 
-    ``` shell
-    [1, 4, 7, 10, 13, 16, 19]
-    ```
+String behaves very much similar to the list. You can think that it is a list where each character  has as index. We can obtain a character from its position or index. As counting starts in pyton from `0`, So the first index is `0` and second index is `1` and so on.  
 
-## References 
+``` python
+mystring = "python is awesome"
+fifth = mystring[4] # fifth character from start
+last_fifth = mystring[-4] # fifth character from last
+print(fifth, last_fifth)
+```
 
-1. [:material-file: W3School on If Statements](https://www.w3schools.com/python/python_conditions.asp)
-2. [:material-file: W3School on While Loop](https://www.w3schools.com/python/python_while_loops.asp)
-3. [:material-file: W3School on For Loop](https://www.w3schools.com/python/python_for_loops.asp)
+``` shell
+o s
+```
+
+### Basic list operations
+
+- **Length:** The length of a string can be computed as follows
+
+     ``` python
+     print(len(mystring))
+     ```
+
+     ``` shell
+     17
+     ```
+
+- **Addition:** Two or more string can be added with `+` operation as follows
+
+     ``` python
+     a = "Sandeep "
+     b = "Suman"
+     c = a + b
+     print(c)
+     ```
+
+     ``` shell
+     Sandeep Suman
+     ```
+
+- **Multiplication:** Repetition can be achieved with `*` operation as follows
+
+     ``` python
+     a = 'Hi!' * 5
+     print(a)
+     ```
+
+     ``` shell
+     Hi!Hi!Hi!Hi!Hi!
+     ```
+
+- **Slicing:** A part of of string starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
+
+     ``` python
+     c = "sandeep"
+     print(c[1:4]) # start from 1st and end before 4th (counting starts with 0)
+     print(c[4:])  # everything after 4th (counting starts with 0)
+     print(c[:4]) # to get the substring from start and end before 4th (counting starts with 0)
+     ```
+
+     ``` shell
+     and
+     eep
+     sand
+     ```
+
+- **Extended Slicing:** The slicing in string is more flexible as it accepts more than two arguments. For example `X[1:10:2]` will get every other item in the substring `X[1:10]`
+
+     ``` python
+     univ = "TilkaManjhiBhagalpurUniversity"
+     s1 = univ[1:20:2] # get even position elements in substring univ[1:20]
+     s2 = univ[::2]  # get even position elements
+     s3 = univ[::-1] # reverse the string
+     print(s)
+     ```
+
+     ``` shell
+     ikMnhBaapr
+     TlaajihgluUiest
+     ytisrevinUruplagahBihjnaMakliT
+     ```
+
+### String Methods
+
+Some of the string method is the following 
+
+- **Capitalize:** This method is used make first letter capital.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.capitalize())
+     ```
+
+     ``` shell
+     Welcome to faculty development programme.
+     ```
+
+- **Lower:** It will make every letter small.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.lower())
+     ```
+
+     ``` shell
+     welcome to faculty development programme.
+     ```
+
+- **Replace:** It will one substring with another.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.replace("M", "X")) # replace all M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelopXent prograXXE.
+     ```
+
+     To replace only one instance, we can pass one more argument. 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.replace("M", "X", 1)) # replace the first M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelopXent prograMME.
+     ```
+
+- **Find:** It will find one string in another string.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.find("to")) # finds the position of "to"
+     ```
+
+     ``` shell
+     8
+     ```
+
+     You can think of this as the following 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     position = msg.find("to") # position of to
+     original = msg[:8] + "to" + msg[8+2:] # the original msg
+
+     print(original)
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelpMent prograMME.
+     ```
+
+- **Split:** The `split` method will convert a string to list of substring
+
+     ``` python 
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     L = msg.split() # default method will split at each whitespace
+     print(L)
+     ```
+
+     ``` shell
+     ['Welcome', 'to', 'FaculTy', 'DevelpMent', 'prograMME.']
+     ```
+
+     The `split` method is much more flexible. We can pass an argument to tell about the marker for split. 
+
+     ``` python
+     msg = "Amar,Akbar,Anthony"
+     L = msg.split(",") # split each part with ","
+     print(L)
+     ```
+
+     ``` shell
+     ['Amar', 'Akbar', 'Anthony']
+     ```
+
+- **Join:** The join method works opposite of split. We can make a string using the split method.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = " ".join(L) # the string in between will go before "."
+     print(msg)
+     ```
+
+     ``` shell
+     Amar Akbar Anthony
+     ```
+
+     If we want to join with `,` in all the elements of the list.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = ",".join(L)
+     print(msg)
+     ```
+
+     ``` shell
+     Amar,Akbar,Anthony
+     ```
+
+     **Ex:** Try to join the list L with comma and space.
+     **Ex:** Try to join in smaller latter. 
+
+!!! tip
+     There are huge number of list methods in python, and python programming is considered to be very powerful in list manipulation. You can google search to do any kind of list manipulation. 
+
+### Membership and Iterating a String
+
+- *Membership* tells if a string is a part of larger string or not. 
+
+     ``` python
+     print("T" in "TMBU")
+     print("math" in "mathematics")
+     print("ss" in "sandeep")
+     ```
+
+     ``` shell
+     True
+     True
+     False
+     ```
+
+- The iteration in string work similar to list as follows 
+
+     ``` python
+     univ = "TMBU"
+     for i in univ:
+          print(i)
+     ```
+
+     ``` shell
+     T
+     M
+     B
+     U
+     ```
+
+**Ex:** Write a program to check if the word 'orange' is present in the "This is orange juice".
+
+**Ex:** Convert the date written in the format "10/06/2020" to "10-06-2020".
+
+**Ex:** Convert "Tilka MaJHi BHaGalPUR UNIVersiTy" to "Tilka Manjhi Bhagalpur University".
+
+## References
+
+1. [:material-file: W3School on List](https://www.w3schools.com/python/python_lists.asp)
+2. [:material-file: W3School on String](https://www.w3schools.com/python/python_strings.asp)

@@ -1,335 +1,507 @@
-# Day 4
+<iframe width="704" height="396" src="https://www.youtube.com/embed/OxStOd763_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Today we will learn about two important data types of numpy library which is similar to vecotrs and matrices. Array and matrices stores data similar to lists but they suitable for mathematical operations like dot product and matrix multiplication. 
+# Day 3
 
 [TOC]
 
-## Array
+## List
 
-Here we will learn about array which is similar to vectors in mathematics.
-  
-### Importing array 
+Till now we are using list to store data and plot them. Now today we will learn about it extensively. List is a data structure, means a way to store and access data. So today we will learn how to store and access data in list data structure. 
 
-Similar to other python library we can import array as the following methods
+- a list is a collection of data in a finite sequence.
+- it can hold values of multiple datatype, i.e., one entry can be integer, other can float or string.
+
+### Creating lists
+
+A list is created using a square bracket as follows,
 
 ``` python
-import array
-import array as arr
-from array import *
-```
+a = [] # an empty list
+b = [1,2,3,4,5] # list of numbers
+c = ["sandeep", "suman", 2020, 7] # mix datatypes
+d = [["sandeep", "suman"], 2020, []] # list inside list
 
-!!! note 
-    We will use only the second method in this course.
-
-
-### Creating Array elements
-
-To make an array in python we use the following functions.
-
-``` python 
-import array as arr
-a = arr.array ('d' ,[1,2,3,4,5])
-print(a)
-```
-
-This will create a array with variable `a` contains five elements 1 to 5. Here `d` denote the data type of float. For other datatype you can use the following table.
-
-| Code | C Type         | Python Type | Min bytes |
-|------|----------------|-------------|-----------|
-| b    | signed char    | int         | 1         |
-| B    | unsigned char  | int         | 1         |
-| u    | Py_UNICODE     | Unicode     | 2         |
-| h    | signed short   | int         | 2         |
-| H    | unsigned short | int         | 2         |
-| i    | signed int     | int         | 2         |
-| I    | unsigned int   | int         | 2         |
-| l    | signed long    | int         | 4         |
-| L    | unsigned long  | int         | 4         |
-| f    | float          | float       | 4         |
-| d    | double         | float       | 8         |
-
-!!! tip
-    You can convert any list of number to an array simply using `d` as in above code.
-
-### Accessing elements of array
-
-- **Element:** To access the an element of the array `a`, we use the following command
-
-    ``` python
-    import array as arr
-    a = arr.array ('d' ,[1,2,3,4,5])
-    print(a[2])  # counting starts with 0
-    print(a[-2]) # count from last
-    ```
-
-    ``` shell
-    3
-    4
-    ```
-
-- **Slicing:** Similar to the list and strings we can obtain a continuous part of an array
-
-    ``` python
-    import array as arr
-
-    a=arr.array('d', [6.8, 5.9, 9.8, 2.4, 3.3])
-    print(a[1:3]) # prints the part of array start with index 1 and end before 3
-    ```
-
-    ``` shell
-    array('d', [5.9, 9.8])
-    ```
-
-### Basic Array operations
-
-- **len:** Length of an array can be computed using `len` function as follows
-
-    ``` python
-    import array as arr
-    a = arr.array ('d' ,[1,2,3,4,5])
-    print(len(a)) # prints length of array a
-    ```
-
-    ``` shell
-    5
-    ```
-
-- **Concatenation:** We can join two array with `+` operation.
-
-    ``` python
-    import array as arr
-
-    a = arr.array('d',[1.2, 5.8, 6.4])
-    b = arr.array('d',[1.3, 6])
-    c = a + b # array c will have elements of a and b
-    print(c)
-    ```
-
-    ``` shell
-    Array c =  array('d', [1.2, 5.8, 6.4, 1.3, 6.0])
-    ```
-
-### Method on array
-
-- **append:** Similar to the list the append is used to add a single element at the end of an array.
-
-    ``` python
-    import array as arr
-    a = arr.array ('d' ,[1,2,3,4,5])
-    a.append(23) # appends 23 at the end of array a
-    print(a)
-    ```
-
-    ``` shell
-    array('d', [1.0, 2.0, 3.0, 4.0, 5.0, 23.0])
-    ```
-
-- **extend:** It is used when you want to add more than one element at the end of an array.
-
-    ``` python
-    import array as arr
-    a = arr.array ('d' ,[4,5])
-    a.extend([23, 4.15, 6.7]) # extend array a using list
-    print(a)
-    b = arr.array ('d' ,[23, 4.15, 6.7])
-    a.extend(b) # extend array a using another array b
-    print(a)
-    ```
-
-    ``` shell
-    array('d', [4.0, 5.0, 23.0, 4.15, 6.7])
-    array('d', [4.0, 5.0, 23.0, 4.15, 6.7, 23.0, 4.15, 6.7])
-    ```
-
-
-- **insert:** - used when you want to add an element at a specific position in an array.
-
-    ``` python 
-    import array as arr
-    a = arr.array ('d' ,[1.2,2,3.14,4,5])
-    a.insert(1, 2.73) # insert 2.73 at position 1 (count with 0)
-    print(a)
-    ```
-
-    ``` shell 
-    array('d', [1.2, 2.73, 2.0, 3.14, 4.0, 5.0])
-    ```
-
-- **pop:**  It is used when you want to remove an element and return it. We can provide optional argument to remove an element with given index. 
-
-    ``` python
-    import array as arr
-    a = arr.array('d', [4, 3, 5, 6.7, 3.5])
-    print(a.pop()) # remove the last element
-    print(a.pop(1)) # remove index 1 element (count with 0)
-    print(a)
-    ```
-
-    ``` shell
-    3.5
-    3.0
-    array('d', [4.0, 5.0, 6.7])
-    ```
-
-- **remove:** : It is used when you want to remove an  element with a specific value  without returning it.
-
-    ``` python
-    import array as arr
-    a = arr.array('d', [4, 3, 5, 6.7, 3.5])
-    print(a.remove(5)) # remove element 5, but produce no output
-    print(a) # prints array a after removing element 5
-    ```
-
-    ``` shell
-    None
-    array('d', [4.0, 3.0, 6.7, 3.5])
-    ```
-
-### Looping through an array
-
-Similar to list and string we can use for loops or while loops to go through each elements of a list one by one.
-
-- **for** To  iterates over the items of an array specified we can use for as follows
-
-    ``` python
-    import array as arr
-
-    a = arr.array('d', [6.8, 5.9, 9.8, 2.4, 3.3])
-    for i in a:
-        # you can use each element on your desire
-        print(i**2) # printing square of each element
-    ```
-
-    ``` shell
-    46.239999999999995
-    34.81
-    96.04000000000002
-    5.76
-    10.889999999999999
-    ```
-
-## Matrices in Python
-
-Matrices in python can be achieved using one of the following ways
-
-- Nested Lists
-- Numpy Arrays
-- Numpy Matrices
-
-Now we will learn them one by one 
-
-### Nested List
-
-We can used nested list to store data similar to matrices. 
-
-``` python 
-matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print(matrix)
+print(c)
 ```
 
 ``` shell
-[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+['sandeep', 'suman', 2020, 7]
+```
+
+### Accessing data inside list
+
+Each entry has an index or position in a list, which can be used to access them. As counting starts in python from `0`, So the first index is `0` and second index is `1` and so on.  
+
+``` python 
+c = ['sandeep', 'suman', 2020, 7]
+print(c[0]) # to get the 0th element (count with 0)
+print(c[2]) # to get the 2nd element (count with 0)
+print(c[-1]) # count from last
+```
+
+``` shell
+sandeep
+2020
+7
+```
+
+### Basic list operations
+
+- **Length:** The length of a list can be computed as follows
+
+     ``` python
+     len(c)
+     ```
+
+     ``` shell
+     4
+     ```
+
+- **Addition:** Two or more lists can be added with `+` operation as follows
+
+     ``` python
+     a = [1, 2]
+     b = ["a", "b"]
+     c = a + b
+     print(c)
+     ```
+
+     ``` shell
+     [1, 2, 'a', 'b']
+     ```
+
+-  **Multiplication:** Repetition can be achieved with `*` operation as follows
+
+     ``` python
+     a = ['Hi'] * 5
+     print(a)
+     ```
+
+     ``` shell
+     ['Hi', 'Hi', 'Hi', 'Hi', 'Hi']
+     ```
+
+- **Slicing:** A part of of list starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
+
+     ``` python
+     c = ["sandeep", "suman", 2020, 7]
+     print(c[1:3])
+     ```
+
+     ``` shell
+     ['suman', 2020]
+     ```
+
+### List as Stack
+
+Stack is a data structure based on LIFO(Last in first out). 
+
+- **Append:** The `append` method on a list will add element in the end of the list.
+
+     ``` python 
+     L = []
+     L.append(1) # 1 will be added to L
+     L.append(2) # 2 will be added to L
+     print(L)
+     ```
+
+     ``` shell
+     [1, 2]
+     ```
+
+- **Pop:** The `pop` method on list will remove the element from the last. 
+
+     ``` python
+     L = [1, 2]
+     L.pop()
+     print(L)
+     ```
+
+     ``` shell
+     [1]
+     ```
+
+     The method `pop` also takes addition argument to remove element from any given index.
+
+     ``` python
+     L = [1, 2]
+     L.pop(0) # removes the element with index 0
+     print(L)
+     ```
+
+     ``` shell
+     [2]
+     ```
+
+### Other method on list
+
+- **Index:** This method is used to get the index of an element.
+
+     ``` python
+     L = ["apple", "mango", "orange"]
+     i = L.index("mango")
+     print(i)
+     ```
+
+     ``` shell
+     1
+     ```
+
+- **Remove:** This method is used to remove an element in the list.
+
+     ``` python
+     L = ["apple", "mango", "orange"]
+     L.remove("mango")
+     print(L)
+     ```
+
+     ``` shell
+     ['apple', 'orange']
+     ```
+
+- **Reverse:** This method will reverse the elements of the given list.
+
+     ``` python
+     L = ["apple", "mango", "orange"]
+     L.reverse()
+     print(L)
+     ```
+
+     ``` shell
+     ['orange', 'mango', 'apple']
+     ```
+
+- **Sort:** This method is used to sort the elements of a list. 
+
+     ``` python
+     L = [4, 6, 2, 7, 1, 3]
+     L.sort()
+     print(L)
+     ```
+
+     ``` shell
+     [1, 2, 3, 4, 6, 7]
+     ```
+
+!!! tip 
+     The maximum element of a list can be obtained using sort taking in the last element. i.e.,
+
+     ``` python
+     L = [4, 6, 2, 7, 1, 3]
+     L.sort()
+     max = L[-1]
+     print(max)
+     ```
+
+     ``` shell
+     7
+     ```
+
+### Membership and Iterating of a List
+
+- Like the membership in the set. We can tell if something is inside a list or not as follows
+
+     ``` python
+     L = ["apple", "mango", "orange"]
+     print("apple" in L)
+     print("guava" in L)
+     ```
+
+     ``` shell
+     True
+     False
+     ```
+
+
+- Often in programming we want look for each element of a list one by one from start to finish. The process is generally known as `iteration` in programming.
+
+     A simple program to iterate a list is as follows
+
+     ``` python
+     fruits = ["apple", "mango", "orange"]
+     for i in fruits: # semicolon is used to make code block
+          print(i)    # 4 space is used here !important
+     ```
+
+     ``` shell
+     apple
+     mango
+     orange
+     ```
+
+## Strings
+
+String is one the basic datatypes of the python language. There are many ways to define a string but we use the most common method by writing a sentence or paragraph inside single(`'`) or double(`"`) quotes.
+
+``` python 
+mystring = "python is awesome"
+mystring = 'python is awesome'
+print(mystring)
+```
+
+``` shell
+python is awesome
 ```
 
 !!! warning
-    Nested list doesn't work similar to matrices in mathematics. They are simply table and operations are limited by list functions. 
+     Even numbers in single or double quotes behaves as an string.
 
-### Numpy Arrays
+     ``` python
+     temp = "38.7"
+     print(type(temp))
+     ```
 
-Similar to nested list, we can use array inside array to store data in matrices.
+     ``` shell
+     <class 'str'>
+     ```
+
+### Accessing data inside list
+
+String behaves very much similar to the list. You can think that it is a list where each character  has as index. We can obtain a character from its position or index. As counting starts in pyton from `0`, So the first index is `0` and second index is `1` and so on.  
 
 ``` python
-import numpy as np
-
-a = np.array([[1.2, 2.1],[3.6, 4.3]])
-print(a)
+mystring = "python is awesome"
+fifth = mystring[4] # fifth character from start
+last_fifth = mystring[-4] # fifth character from last
+print(fifth, last_fifth)
 ```
 
 ``` shell
-[[1.2 2.1]
-[3.6 4.3]]
+o s
 ```
 
-#### Operation on matrices
+### Basic list operations
 
-- **Addition:** We use `+` to achieve addition of similar size matrices. 
+- **Length:** The length of a string can be computed as follows
 
-    ``` python
-    import numpy as np
+     ``` python
+     print(len(mystring))
+     ```
 
-    a = np.array([[1, 2], [3, 4]])
-    b = np.array([[10, 20], [30, 40]])
-    print(a + b)
-    ```
+     ``` shell
+     17
+     ```
 
-    ``` shell
-    [[11 22]
-    [33 44]]
-    ```
+- **Addition:** Two or more string can be added with `+` operation as follows
 
-- **Matrix multiplication:** We use `*` to achieve addition of similar size matrices. 
+     ``` python
+     a = "Sandeep "
+     b = "Suman"
+     c = a + b
+     print(c)
+     ```
 
-    ``` python
-    import numpy as np
+     ``` shell
+     Sandeep Suman
+     ```
 
-    a = np.array([[1, 2], [3, 4]])
-    b = np.array([[10, 20], [30, 40]])
-    print(a * b)
-    ```
+- **Multiplication:** Repetition can be achieved with `*` operation as follows
 
-    ``` shell
-    [[ 10  40]
-    [ 90 160]]
-    ```
+     ``` python
+     a = 'Hi!' * 5
+     print(a)
+     ```
 
-- **Transpose:** We can transpose a matrix using the `transpose` function of `numpy` library. 
+     ``` shell
+     Hi!Hi!Hi!Hi!Hi!
+     ```
 
-    ``` python
-    import numpy as np
+- **Slicing:** A part of of string starting with `i` index and end before `j` can be obtained by `List[i:j]`, for example 
 
-    a = np.array([[1,2,3],[4,5,6]])
-    print(a)
-    print(np.transpose(a))
-    ```
+     ``` python
+     c = "sandeep"
+     print(c[1:4]) # start from 1st and end before 4th (counting starts with 0)
+     print(c[4:])  # everything after 4th (counting starts with 0)
+     print(c[:4]) # to get the substring from start and end before 4th (counting starts with 0)
+     ```
 
-    ``` shell
-    [[1 2 3]
-    [4 5 6]]
-    [[1 4]
-    [2 5]
-    [3 6]]
-    ```
+     ``` shell
+     and
+     eep
+     sand
+     ```
 
-### Numpy Matrices
+- **Extended Slicing:** The slicing in string is more flexible as it accepts more than two arguments. For example `X[1:10:2]` will get every other item in the substring `X[1:10]`
 
-Numpy matrix is a class in nunpy library to handle matrices and mathematical operations related to them. 
+     ``` python
+     univ = "TilkaManjhiBhagalpurUniversity"
+     s1 = univ[1:20:2] # get even position elements in substring univ[1:20]
+     s2 = univ[::2]  # get even position elements
+     s3 = univ[::-1] # reverse the string
+     print(s)
+     ```
 
+     ``` shell
+     ikMnhBaapr
+     TlaajihgluUiest
+     ytisrevinUruplagahBihjnaMakliT
+     ```
 
-#### creating a matrix from a string
+### String Methods
 
-The main advantage of this class is that it has flexible method of creating matrices and slicing them. 
+Some of the string method is the following 
 
-``` python
-import numpy as np
+- **Capitalize:** This method is used make first letter capital.
 
-a = np.matrix("1, 2; 3, 4")
-b = np.matrix([[10, 20],[30, 40]])
-print(a)
-print(b)
-```
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.capitalize())
+     ```
 
-``` shell
-[[1 2]
- [3 4]]
-[[10 20]
- [30 40]]
-```
+     ``` shell
+     Welcome to faculty development programme.
+     ```
 
-#### Operations on Numpy Matrices
+- **Lower:** It will make every letter small.
 
-The operation on numpy matrices are similar to the matrices we make using numpy arrays.
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.lower())
+     ```
+
+     ``` shell
+     welcome to faculty development programme.
+     ```
+
+- **Replace:** It will one substring with another.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.replace("M", "X")) # replace all M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelopXent prograXXE.
+     ```
+
+     To replace only one instance, we can pass one more argument. 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelopMent prograMME."
+     print(msg.replace("M", "X", 1)) # replace the first M with X
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelopXent prograMME.
+     ```
+
+- **Find:** It will find one string in another string.
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     print(msg.find("to")) # finds the position of "to"
+     ```
+
+     ``` shell
+     8
+     ```
+
+     You can think of this as the following 
+
+     ``` python
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     position = msg.find("to") # position of to
+     original = msg[:8] + "to" + msg[8+2:] # the original msg
+
+     print(original)
+     ```
+
+     ``` shell
+     Welcome to FaculTy DevelpMent prograMME.
+     ```
+
+- **Split:** The `split` method will convert a string to list of substring
+
+     ``` python 
+     msg = "Welcome to FaculTy DevelpMent prograMME."
+     L = msg.split() # default method will split at each whitespace
+     print(L)
+     ```
+
+     ``` shell
+     ['Welcome', 'to', 'FaculTy', 'DevelpMent', 'prograMME.']
+     ```
+
+     The `split` method is much more flexible. We can pass an argument to tell about the marker for split. 
+
+     ``` python
+     msg = "Amar,Akbar,Anthony"
+     L = msg.split(",") # split each part with ","
+     print(L)
+     ```
+
+     ``` shell
+     ['Amar', 'Akbar', 'Anthony']
+     ```
+
+- **Join:** The join method works opposite of split. We can make a string using the split method.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = " ".join(L) # the string in between will go before "."
+     print(msg)
+     ```
+
+     ``` shell
+     Amar Akbar Anthony
+     ```
+
+     If we want to join with `,` in all the elements of the list.
+
+     ``` python
+     L = ['Amar', 'Akbar', 'Anthony']
+     msg = ",".join(L)
+     print(msg)
+     ```
+
+     ``` shell
+     Amar,Akbar,Anthony
+     ```
+
+     **Ex:** Try to join the list L with comma and space.
+     **Ex:** Try to join in smaller latter. 
+
+!!! tip
+     There are huge number of list methods in python, and python programming is considered to be very powerful in list manipulation. You can google search to do any kind of list manipulation. 
+
+### Membership and Iterating a String
+
+- *Membership* tells if a string is a part of larger string or not. 
+
+     ``` python
+     print("T" in "TMBU")
+     print("math" in "mathematics")
+     print("ss" in "sandeep")
+     ```
+
+     ``` shell
+     True
+     True
+     False
+     ```
+
+- The iteration in string work similar to list as follows 
+
+     ``` python
+     univ = "TMBU"
+     for i in univ:
+          print(i)
+     ```
+
+     ``` shell
+     T
+     M
+     B
+     U
+     ```
+
+**Ex:** Write a program to check if the word 'orange' is present in the "This is orange juice".
+
+**Ex:** Convert the date written in the format "10/06/2020" to "10-06-2020".
+
+**Ex:** Convert "Tilka MaJHi BHaGalPUR UNIVersiTy" to "Tilka Manjhi Bhagalpur University".
 
 ## References
 
-1. [:material-file: W3School on Numpy Array](https://www.w3schools.com/python/numpy_creating_arrays.asp)
-2. [:material-file: Numpy Matrices on Tutorials Point](https://www.tutorialspoint.com/numpy/numpy_matrix_library.htm)
+1. [:material-file: W3School on List](https://www.w3schools.com/python/python_lists.asp)
+2. [:material-file: W3School on String](https://www.w3schools.com/python/python_strings.asp)
