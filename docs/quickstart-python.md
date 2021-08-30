@@ -1,4 +1,4 @@
-# Quick Start Python 3
+# Quick Start
 
 [TOC]
 

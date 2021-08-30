@@ -1,14 +1,14 @@
 <iframe width="704" height="396" src="https://www.youtube.com/embed/WiMMcwK8izc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# DAY 9
+# DAY 9: Functions 
 
-Today we will learn about functions in programming. The functions in programming is similar to mathematical functions which takes input and produce output. But the main idea of function in programming is inspired by one of guiding principle of programming known as ==don't repeat yourself==, also known as ==DRY==. So if some part of code is needs to be written again and again then it means that we can convert this into a function as use them. 
+Today we will learn about functions in programming. The functions in programming is similar to mathematical functions which takes input and produce output. But the main idea of function in programming is inspired by one of guiding principle of programming known as **don't repeat yourself**, also known as **DRY**. So if some part of code is needs to be written again and again then it means that we can convert this into a function as use them. 
 
 [TOC]
 
 ## General Theory
 
-Functions are the foundation of higher level programming language. There are programming language which implements everything based on functions only those are called ==functional programming language==. Although modern languages implement a more abstract thing known as ==object== which is composed of data and methods(function associated with the data). Such programming language are called ==object oriented programming language==, and python is one of them.
+Functions are the foundation of higher level programming language. There are programming language which implements everything based on functions only those are called **functional programming language**. Although modern languages implement a more abstract thing known as **object** which is composed of data and methods(function associated with the data). Such programming language are called **object oriented programming language**, and python is one of them.
 
 Recall what have you done till now, you realize everything is a function. For example 
 

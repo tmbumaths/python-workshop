@@ -1,6 +1,8 @@
 <iframe width="704" height="396" src="https://www.youtube.com/embed/o1LKdxcRU8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Day 3
+# Day 3: Importing Data and Statistical Plots
+
+Today we will learn to import data from external files and plot them.
 
 [TOC]
 
