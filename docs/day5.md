@@ -32,7 +32,7 @@ python is awesome
 
 ### Accessing data inside list
 
-String behaves very much similar to the list. You can think that it is a list where each character  has as index. We can obtain a character from its position or index. As counting starts in pyton from `0`, So the first index is `0` and second index is `1` and so on.  
+String behaves very much similar to the list. You can think that it is a list where each character  has as index. We can obtain a character from its position or index. As counting starts in python from `0`, So the first index is `0` and second index is `1` and so on.  
 
 ``` python
 mystring = "python is awesome"
@@ -163,7 +163,7 @@ Some of the string method is the following
 - **Find:** It will find one string in another string.
 
      ``` python
-     msg = "Welcome to FaculTy DevelpMent prograMME."
+     msg = "Welcome to FaculTy DevelopMent prograMME."
      print(msg.find("to")) # finds the position of "to"
      ```
 
@@ -174,7 +174,7 @@ Some of the string method is the following
      You can think of this as the following 
 
      ``` python
-     msg = "Welcome to FaculTy DevelpMent prograMME."
+     msg = "Welcome to FaculTy DevelopMent prograMME."
      position = msg.find("to") # position of to
      original = msg[:8] + "to" + msg[8+2:] # the original msg
 
@@ -182,19 +182,19 @@ Some of the string method is the following
      ```
 
      ``` shell
-     Welcome to FaculTy DevelpMent prograMME.
+     Welcome to FaculTy DevelopMent prograMME.
      ```
 
 - **Split:** The `split` method will convert a string to list of substring
 
      ``` python 
-     msg = "Welcome to FaculTy DevelpMent prograMME."
+     msg = "Welcome to FaculTy DevelopMent prograMME."
      L = msg.split() # default method will split at each whitespace
      print(L)
      ```
 
      ``` shell
-     ['Welcome', 'to', 'FaculTy', 'DevelpMent', 'prograMME.']
+     ['Welcome', 'to', 'FaculTy', 'DevelopMent', 'prograMME.']
      ```
 
      The `split` method is much more flexible. We can pass an argument to tell about the marker for split. 

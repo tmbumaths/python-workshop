@@ -2,40 +2,75 @@
 
 # Day 1: Variables and Mathematical Operations
 
-The agenda of today is the following.
+The agenda of the first day is to do some trivial things, like printing something and doing school arithmetic. 
 
 [TOC]
 
+## Print Function
+
+A program can be perfect but produce no output unless it is not told to do so. To get the output from the program we have to use `print` function. 
+Like mathematics **functions** in python are objects which takes some input and produce some output. Many functions are inbuilt in python. Later we will learn to define our own functions. 
+
+Now let's try the first program in any language is usually printing **Hello World!**. In python it is very simple and intuitive. 
+
+``` python
+print("Hello World!")
+```
+
+```
+Hello World!
+```
+
+
 ## Defining variable
 
-To define a varaible just choose a varaible name and asign it to a value using `=` as follows
+In every programming language, we can assign something a value. To define a variable just choose a variable name and assign it to a value using `=` as follows
 
 ``` python
 x = 24 # an integer
 pi = 3.14 # a float
-name = "Sandeep Suman" # a string
+msg = "Hello World!" # a string
 ```
 
-**Ex:** Choose three variables and assign one as an integer, one as a float and one as a string, and print them. For example to print the `name` variable we use 
+Now we can recall these value by it's variable. Like here `msg` is assigned to `Hello World!`. We can print this by simply
 
 ``` python 
-print(name)
+print(x)
+print(pi)
+print(msg)
 ```
 
 ```
-Sandeep Suman
+24
+3.14
+Hello World!
 ```
+
+**Ex:** Choose three variables and assign one as an integer, one as a float and one as a string, and print them.
+
+!!! warning
+    A variable can be assigned multiple times in a program. Only the last value will be printed.
+
+    ``` python 
+    name = "Ram Kumar"   # name is Ram Kumar
+    name = "Shyam Kumar" # name is Shyam Kumar
+    print(name)
+    ```
+
+    ```
+    Shyam Kumar
+    ```
 
 !!! tip
     The line after `#` got ignored by the python. It is called a comment in any programming language. You can use comment to add some instructions to the code. 
 
-## Matheamtical Operations
+## Mathematical Operations
 
-Mathematical operations, i.e., addition, substraction etc. can be done as 
+Mathematical operations, i.e., addition, subtraction etc. can be done as 
 
 ``` python
 5 + 6 # addition
-5 - 6 # substraction
+5 - 6 # subtraction
 5 * 6 # multiplication
 5 / 6 # division
 5 ** 6 # exponent or power

@@ -2,13 +2,13 @@
 
 # Day 2: Using Libraries and Plotting Functions
 
-The agenda of today is the following.
+The agenda of today is to import some external libraries and plot mathematical functions. 
 
 [TOC]
 
 ## Importing Libraries
 
-To increase the functiionality of any language we use libraries or pre written code. 
+To increase the functionality of any language we use libraries or pre written code. 
 
 A very useful library in python is called `numpy` which is used to do numerical calculation in python. In order to import a library in python you can use any of the following methods.
 
@@ -93,7 +93,7 @@ plt.show()
 
 ### Adding Attributes in Plots
 
-The graph shows visual information in a small space in the form of an image. The representation can be improved by adding extra infomation like title legends and other things. These are called attributes.
+The graph shows visual information in a small space in the form of an image. The representation can be improved by adding extra information like title legends and other things. These are called attributes.
 
 - Modify the *attributes* of a *plot* like *color, line width, line style* by passing additional *arguments.*
 
