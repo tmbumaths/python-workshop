@@ -2,7 +2,7 @@
 
 # DAY 8: Loops
 
-Today we will learn about control structure and loops. Control structure and loops are fundamental concept in programming. Hence they are implemented in every programmming language. Actully these concepts make a programming language different from calculators. 
+Today we will learn about control structure and loops. Control structure and loops are fundamental concept in programming. Hence they are implemented in every programming language. Actually these concepts make a programming language different from calculators. 
 
 [TOC]
 

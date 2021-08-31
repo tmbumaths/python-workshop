@@ -1,8 +1,6 @@
 # Quick Start
 
-[TOC]
-
-Python is a programming language so before learning anything we have to setup the enviroment so we can practice the programs. Plese install pyton 3 as given below.
+A warm welcome to the **Python Programming Workshop**. Python is a programming language so before learning anything we have to setup the environment so we can practice the programs. Plebe install python 3 as given below.
 
 ## Installation
 
@@ -10,7 +8,7 @@ Programming languages are supposed to be learn on computers. Fortunately now we 
 
 #### Android Smartphone
 
-Plese the Pydroid 3 IDE(Integrated development enviroment) from the playstore using the following link
+Please install Pydroid 3 IDE(Integrated development environment) from the playstore using the following link
 
 [Install Pydroid 3 IDE](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3)
 
@@ -19,7 +17,7 @@ In order to run a simple python program and test the installation please follow 
 
 1. Open the pydroid 3 IDE
 2. Write `print("hello world!")`
-3. Press the yellow buttion on the right bottom, you will see `hello world!` is printed on a terminal. 
+3. Press the yellow button on the right bottom, you will see `hello world!` is printed on a terminal. 
 
 
 The strength of any programming language lies inside libraries, python has rich libraries bcs it has been around 30 years. To install libraries you need following app as well.
@@ -30,7 +28,7 @@ The strength of any programming language lies inside libraries, python has rich 
 
 #### Computers/Laptops
 
-Plese install anaconda python 3.x from the bottom of the following page according to your platform.
+In order to install python on computer, we can use **anaconda python 3.x** from the bottom of the following page according to your operating system.
 
 [Download Anaconda Python](https://www.anaconda.com/products/individual)
 

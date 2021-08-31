@@ -3,13 +3,13 @@
 
 # DAY 7: Conditional Statements
 
-Today we will learn about control structure and loops. Control structure and loops are fundamental concept in programming. Hence they are implemented in every programmming language. Actully these concepts make a programming language different from calculators. 
+Today we will learn about control structure and loops. Control structure and loops are fundamental concept in programming. Hence they are implemented in every programming language. Actually these concepts make a programming language different from calculators. 
 
 [TOC]
 
 ## Boolean
 
-Since we have seen that control structure depends on ==test==. Test is nothing but a statement in pyton whose value is either `True` or `False` but not together. For this we have a data type in python to represent this, known as boolean data type. 
+Since we have seen that control structure depends on ==test==. Test is nothing but a statement in python whose value is either `True` or `False` but not together. For this we have a data type in python to represent this, known as boolean data type. 
 
 ### Assigning Boolean Data
 

@@ -2,7 +2,7 @@
 
 # Day 6: Vector and Matrices
 
-Today we will learn about two important data types of numpy library which is similar to vecotrs and matrices. Array and matrices stores data similar to lists but they suitable for mathematical operations like dot product and matrix multiplication. 
+Today we will learn about two important data types of numpy library which is similar to vectors and matrices. Array and matrices stores data similar to lists but they suitable for mathematical operations like dot product and matrix multiplication. 
 
 [TOC]
 
