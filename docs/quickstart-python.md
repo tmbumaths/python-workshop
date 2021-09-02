@@ -24,6 +24,7 @@ The strength of any programming language lies inside libraries, python has rich 
 
 [Pydroid 3 Repo](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3.quickinstallrepo)
 
+
 *** 
 
 #### Computers/Laptops
