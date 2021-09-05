@@ -22,6 +22,7 @@
       </div>
 
       <div class="md-grid md-typeset"></div>
+      <div class="bg-grey-100 px-3 font-sans leading-normal tracking-normal">
       <div class="w-48 mx-auto pt-6 border-b-2 border-orange-500 text-center text-2xl text-blue-700">LEADERBOARD</div>
       <div class="p-2 text-center text-lg text-gray-700">Performance of Active Participants.</div>
       <div class="container pt-8 mx-auto" x-data="loadEmployees()">
@@ -37,7 +38,7 @@
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <template x-for="item in filteredEmployees" :key="item">
             <div
-              class="flex items-center shadow hover:bg-indigo-100 hover:shadow-lg hover:rounded transition duration-150 ease-in-out transform hover:scale-105 p-3"
+              class="flex items-center shadow hover:bg-indigo-100 hover:shadow-lg hover:rounded transition duration-150 ease-in-out transform hover:scale-105 p-1"
             >
               <img
                 class="w-10 h-10 rounded-full mr-4"
@@ -206,6 +207,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
     </section>
