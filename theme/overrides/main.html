@@ -1,6 +1,8 @@
   {% extends "base.html" %}
   {% block extrahead %}
     <link rel="stylesheet" href="{{ 'overrides/assets/home.css' | url }}">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   {% endblock %}
   {% block announce %}
     <p>Program will start soon for the students of University Department of Mathematics, TMBU, Bhagalpur</p>
@@ -8,4 +10,85 @@
   {% block scripts %}
     {{ super() }}
     <script src="{{ 'overrides/assets/home.js' | url }}"></script>
+    <script src="./students.json"></script>
+    <script>
+      function loadEmployees() {
+          return {
+          search: "",
+          pageNumber: 0,
+          size: 12,
+          total: "",
+          myForData: sourceData,
+
+          get filteredEmployees() {
+            const start = this.pageNumber * this.size,
+              end = start + this.size;
+
+            if (this.search === "") {
+              this.total = this.myForData.length;
+              return this.myForData.slice(start, end);
+            }
+
+            //Return the total results of the filters
+            this.total = this.myForData.filter((item) => {
+              return item.Name
+                .toLowerCase()
+                .includes(this.search.toLowerCase());
+            }).length;
+
+            //Return the filtered data
+            return this.myForData
+              .filter((item) => {
+                return item.Name
+                  .toLowerCase()
+                  .includes(this.search.toLowerCase());
+              })
+              .slice(start, end);
+          },
+
+          //Create array of all pages (for loop to display page numbers)
+          pages() {
+            return Array.from({
+              length: Math.ceil(this.total / this.size),
+            });
+          },
+
+          //Next Page
+          nextPage() {
+            this.pageNumber++;
+          },
+
+          //Previous Page
+          prevPage() {
+            this.pageNumber--;
+          },
+
+          //Total number of pages
+          pageCount() {
+            return Math.ceil(this.total / this.size);
+          },
+
+          //Return the start range of the paginated results
+          startResults() {
+            return this.pageNumber * this.size + 1;
+          },
+
+          //Return the end range of the paginated results
+          endResults() {
+            let resultsOnPage = (this.pageNumber + 1) * this.size;
+
+            if (resultsOnPage <= this.total) {
+              return resultsOnPage;
+            }
+
+            return this.total;
+          },
+
+          //Link to navigate to page
+          viewPage(index) {
+            this.pageNumber = index;
+          },
+        };
+      }
+    </script>
   {% endblock %}
