@@ -1,6 +1,5 @@
 start:
 	git pull
-	mkdocs serve & jupyter lab
 
 lab:
 	jupyter lab	
