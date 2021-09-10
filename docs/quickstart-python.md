@@ -24,27 +24,27 @@ The strength of any programming language lies inside libraries, python has rich 
 
 For example if we want to install the `numpy` library, then we have to do the following. 
 
-=== "Menu"
+=== "1"
 
     ![img](./image/import1.jpg)
 
-=== "Pip"
+=== "2"
 
     ![clicking pip](./image/import2.jpg)
 
-=== "Search"
+=== "3"
 
     ![searching numpy and matplotlib](./image/import3.jpg)
 
-=== "Install"
+=== "4"
 
     ![Installing numpy](./image/import4.jpg)
 
-=== "Test"
+=== "5"
 
     ![clicking pip](./image/import6.jpg)
 
-=== "Verify"
+=== "6"
 
     ![clicking pip](./image/import7.jpg)
 
