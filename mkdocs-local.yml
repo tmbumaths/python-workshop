@@ -66,6 +66,7 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
