@@ -55,11 +55,7 @@ For example if we want to install the `numpy` library, then we have to do the fo
 
 In order to install python on computer, we can use **anaconda python 3.x** from the bottom of the following page according to your operating system.
 
-[Download Anaconda Python](https://www.anaconda.com/products/individual)
-
-!!! warning
-    Tick the option of adding python to the path.
-
+!!! tip "[Download Anaconda Python](https://www.anaconda.com/products/individual)"
 
 **Running a simple program** 
 In order to run a simple python program and test the installation please follow these steps
