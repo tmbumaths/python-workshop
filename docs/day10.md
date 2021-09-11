@@ -2,4 +2,4 @@
 
 # DAY 10: Turtle
 
-Today we will learn a simple drawing library called **turtle**. It can draw a shape based on mathematical description. 
+Today we will learn a simple drawing library called **turtle**. It can draw a shape based on it's mathematical description. 

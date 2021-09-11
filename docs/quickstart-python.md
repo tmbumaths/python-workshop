@@ -10,14 +10,17 @@ Programming languages are supposed to be learn on computers. Fortunately now we 
 
 Please install Pydroid 3 IDE(Integrated development environment) from the playstore using the following link
 
-??? tip "[Install Pydroid 3 IDE](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3)"
-    **Running a simple program** 
+!!! tip "[Install Pydroid 3 IDE](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3)"
 
-    In order to run a simple python program and test the installation please follow these stpes
+After installing the app, we can test it by running a simple program known as `Hello Wrold!`. In this program we have to print the same. In python 3, we have to do the following 
 
-    1. Open the pydroid 3 IDE
-    2. Write `print("hello world!")`
-    3. Press the yellow button on the right bottom, you will see `hello world!` is printed on a terminal. `
+=== "1"
+
+    ![img](./image/install1.jpg)
+
+=== "2"
+
+    ![clicking pip](./image/install2.jpg)
 
 
 The strength of any programming language lies inside libraries, python has rich libraries bcs it has been around 30 years. To install libraries you need following app as well.
@@ -59,9 +62,9 @@ In order to install python on computer, we can use **anaconda python 3.x** from 
 
 
 **Running a simple program** 
-In order to run a simple python program and test the installation please follow these stpes
+In order to run a simple python program and test the installation please follow these steps
 
-1. Open the spyder app
+1. Open the spider app
 2. Type `python("hello world!)`
 3. You can see `hello world` printed in output window.
 
