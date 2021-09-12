@@ -1,8 +1,8 @@
 var sourceData = 
 [
 {"SNo":"1","Name":"HIMANSHU KUMAR PREMI","Total":"19","Attempted":"2","Rank":"1"},
-{"SNo":"2","Name":"SHOBHA BHARTI","Total":"13","Attempted":"2","Rank":"2"},
-{"SNo":"3","Name":"KUMARI SONI","Total":"10","Attempted":"1","Rank":"3"},
+{"SNo":"2","Name":"KUMARI SONI","Total":"18","Attempted":"2","Rank":"2"},
+{"SNo":"3","Name":"SHOBHA BHARTI","Total":"13","Attempted":"2","Rank":"3"},
 {"SNo":"4","Name":"ABHIJEET KUMAR","Total":"0","Attempted":"0","Rank":"4"},
 {"SNo":"5","Name":"ADITYA KUMAR SINGH","Total":"0","Attempted":"0","Rank":"4"},
 {"SNo":"6","Name":"AKSHAY KUMAR","Total":"0","Attempted":"0","Rank":"4"},
