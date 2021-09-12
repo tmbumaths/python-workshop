@@ -22,5 +22,4 @@ Please ensure to complete the quiz before moving to next topic for each lessen.
 1. [Day 10 Quiz](https://forms.gle/eBMq5txnahzGSb2f8)
 
 
-!!! info
-    You can check your rank on the [homepage](https://sandeepsuman.com/python-workshop)
+!!! info "You can check your rank on the [homepage](https://sandeepsuman.com/python-workshop)"

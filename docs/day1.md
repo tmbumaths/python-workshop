@@ -48,20 +48,19 @@ Hello World!
 
 **Ex:** Choose three variables and assign one as an integer, one as a float and one as a string, and print them.
 
-!!! warning
-    A variable can be assigned multiple times in a program. Only the last value will be printed.
+!!! warning "A variable can be assigned multiple times in a program. Only the last value will be printed."
 
-    ``` python 
-    name = "Ram Kumar"   # name is Ram Kumar
-    name = "Shyam Kumar" # name is Shyam Kumar
-    print(name)
-    ```
+``` python 
+name = "Ram Kumar"   # name is Ram Kumar
+name = "Shyam Kumar" # name is Shyam Kumar
+print(name)
+```
 
-    ```
-    Shyam Kumar
-    ```
+```
+Shyam Kumar
+```
 
-!!! tip
+!!! tip "Using Comment Inside Code"
     The line after `#` got ignored by the python. It is called a comment in any programming language. You can use comment to add some instructions to the code. 
 
 ## Mathematical Operations
