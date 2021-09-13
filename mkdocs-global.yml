@@ -5,7 +5,6 @@ site_url: 'https://sandeepsuman.com/python-workshop/'
 
 plugins:
   - search
-  - mknotebooks # pip install mknotebooks
   - minify:
       minify_html: true
 

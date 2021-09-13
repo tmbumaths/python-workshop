@@ -40,10 +40,7 @@
             <div
               class="flex items-center shadow hover:bg-indigo-100 hover:shadow-lg hover:rounded transition duration-150 ease-in-out transform hover:scale-105 p-1"
             >
-              <img
-                class="w-10 h-10 rounded-full mr-4"
-                src="image/python-icon.png"
-              />
+              <img class="w-10 h-10 rounded-full mr-4" :src="'image/' + item.ImageID + '.jpg'" onerror="this.onerror=null;this.src='image/python-icon.png';" />
               <div class="text-sm">
                 <p
                   class="text-gray-900 leading-none"
