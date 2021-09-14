@@ -2,47 +2,47 @@ SNo,Name,ImageID,Total,Attempted,Rank
 1,KUMARI SONI,kumari-soni25,24,3,1
 2,HIMANSHU KUMAR PREMI,himanshu-kumar-premi25,19,2,2
 3,SHOBHA BHARTI,shobha-bharti27,13,2,3
-4,AARUSHI SINGH,aarushi-singh28,6,1,4
-5,ABHIJEET KUMAR,abhijeet-kumar25,0,0,5
-6,ADITYA KUMAR SINGH,aditya-kumar-singh26,0,0,5
-7,AKSHAY KUMAR,akshay-kumar22,0,0,5
-8,AJIT KUMAR,ajit-kumar20,0,0,5
-9,ANKIT KUMAR,ankit-kumar26,0,0,5
-10,ASHISH NANDAN,ashish-nandan22,0,0,5
-11,CHANDRAMUKHI KUMARI,chandramukhi-kumari31,0,0,5
-12,DEEPAK KUMAR THAKUR,deepak-kumar-thakur26,0,0,5
-13,DEEPAK KUMAR,deepak-kumar22,0,0,5
-14,GOPAL KUMAR AGRAWAL,gopal-kumar-agrawal29,0,0,5
-15,KUNAL KUMAR VATSA,kunal-kumar-vatsa20,0,0,5
-16,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,0,0,5
-17,KUMUD KUMARI,kumud-kumari21,0,0,5
-18,LALU KUMAR YADAV ,lalu-kumar-yadav-23,0,0,5
-19,MONA CHATTERJEE,mona-chatterjee32,0,0,5
-20,MITHUN KUMAR,mithun-kumar27,0,0,5
-21,MONI KUMARI,moni-kumari24,0,0,5
-22,MUKESH KUMAR,mukesh-kumar27,0,0,5
-23,NIDHI KUMARI ,nidhi-kumari-29,0,0,5
-24,NIRAJ KUMAR,niraj-kumar19,0,0,5
-25,NISHA BHARTI,nisha-bharti28,0,0,5
-26,NITISH KUMAR,nitish-kumar24,0,0,5
-27,POOJA SUMAN,pooja-suman23,0,0,5
-28,PUSHPENDRA KASHYAP,pushpendra-kashyap29,0,0,5
-29,PRAVEEN KUMAR,praveen-kumar28,0,0,5
-30,PRINCE KUMAR,prince-kumar22,0,0,5
-31,PUJA KUMARI,puja-kumari25,0,0,5
-32,RAHUL KUMAR,rahul-kumar20,0,0,5
-33,RAKHI,rakhi18,0,0,5
-34,RAMAN KUMAR,raman-kumar22,0,0,5
-35,RICHA SIDDHI,richa-siddhi22,0,0,5
-36,SAJDA ASHRAFI,sajda-ashrafi21,0,0,5
-37,SARIKA MISHRA ,sarika-mishra-26,0,0,5
-38,SAURABH KUMAR SINGH,saurabh-kumar-singh33,0,0,5
-39,SHWETA KUMARI,shweta-kumari26,0,0,5
-40,SUDHA KUMARI,sudha-kumari24,0,0,5
-41,SULEKHA,sulekha26,0,0,5
-42,SURAJ YADAV,suraj-yadav23,0,0,5
-43,SWATI GHOSHAL,swati-ghoshal23,0,0,5
-44,TEJENDRA KUMAR,tejendra-kumar24,0,0,5
-45,UJJWAL KUMAR,ujjwal-kumar26,0,0,5
-46,YAMAN KUMAR,yaman-kumar21,0,0,5
-47,ZAINAB ZEENAT,zainab-zeenat27,0,0,5
+4,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,10,1,4
+5,AARUSHI SINGH,aarushi-singh28,6,1,5
+6,ABHIJEET KUMAR,abhijeet-kumar25,0,0,6
+7,ADITYA KUMAR SINGH,aditya-kumar-singh26,0,0,6
+8,AKSHAY KUMAR,akshay-kumar22,0,0,6
+9,AJIT KUMAR,ajit-kumar20,0,0,6
+10,ANKIT KUMAR,ankit-kumar26,0,0,6
+11,ASHISH NANDAN,ashish-nandan22,0,0,6
+12,CHANDRAMUKHI KUMARI,chandramukhi-kumari31,0,0,6
+13,DEEPAK KUMAR THAKUR,deepak-kumar-thakur26,0,0,6
+14,DEEPAK KUMAR,deepak-kumar22,0,0,6
+15,GOPAL KUMAR AGRAWAL,gopal-kumar-agrawal29,0,0,6
+16,KUNAL KUMAR VATSA,kunal-kumar-vatsa20,0,0,6
+17,KUMUD KUMARI,kumud-kumari21,0,0,6
+18,LALU KUMAR YADAV ,lalu-kumar-yadav-23,0,0,6
+19,MONA CHATTERJEE,mona-chatterjee32,0,0,6
+20,MITHUN KUMAR,mithun-kumar27,0,0,6
+21,MONI KUMARI,moni-kumari24,0,0,6
+22,MUKESH KUMAR,mukesh-kumar27,0,0,6
+23,NIDHI KUMARI ,nidhi-kumari-29,0,0,6
+24,NIRAJ KUMAR,niraj-kumar19,0,0,6
+25,NISHA BHARTI,nisha-bharti28,0,0,6
+26,NITISH KUMAR,nitish-kumar24,0,0,6
+27,POOJA SUMAN,pooja-suman23,0,0,6
+28,PUSHPENDRA KASHYAP,pushpendra-kashyap29,0,0,6
+29,PRAVEEN KUMAR,praveen-kumar28,0,0,6
+30,PRINCE KUMAR,prince-kumar22,0,0,6
+31,PUJA KUMARI,puja-kumari25,0,0,6
+32,RAHUL KUMAR,rahul-kumar20,0,0,6
+33,RAKHI,rakhi18,0,0,6
+34,RAMAN KUMAR,raman-kumar22,0,0,6
+35,RICHA SIDDHI,richa-siddhi22,0,0,6
+36,SAJDA ASHRAFI,sajda-ashrafi21,0,0,6
+37,SARIKA MISHRA ,sarika-mishra-26,0,0,6
+38,SAURABH KUMAR SINGH,saurabh-kumar-singh33,0,0,6
+39,SHWETA KUMARI,shweta-kumari26,0,0,6
+40,SUDHA KUMARI,sudha-kumari24,0,0,6
+41,SULEKHA,sulekha26,0,0,6
+42,SURAJ YADAV,suraj-yadav23,0,0,6
+43,SWATI GHOSHAL,swati-ghoshal23,0,0,6
+44,TEJENDRA KUMAR,tejendra-kumar24,0,0,6
+45,UJJWAL KUMAR,ujjwal-kumar26,0,0,6
+46,YAMAN KUMAR,yaman-kumar21,0,0,6
+47,ZAINAB ZEENAT,zainab-zeenat27,0,0,6
