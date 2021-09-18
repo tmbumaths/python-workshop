@@ -1,9 +1,9 @@
 var sourceData = 
 [
 {"SNo":"1","Name":"HIMANSHU KUMAR PREMI","ImageID":"himanshu-kumar-premi25","Total":"58","Attempted":"6","Rank":"1"},
-{"SNo":"2","Name":"KUMARI SONI","ImageID":"kumari-soni25","Total":"41","Attempted":"6","Rank":"2"},
-{"SNo":"3","Name":"AARUSHI SINGH","ImageID":"aarushi-singh28","Total":"22","Attempted":"3","Rank":"3"},
-{"SNo":"4","Name":"KUMARI SHALINI SAHAY","ImageID":"kumari-shalini-sahay23","Total":"20","Attempted":"2","Rank":"4"},
+{"SNo":"2","Name":"KUMARI SONI","ImageID":"kumari-soni25","Total":"51","Attempted":"7","Rank":"2"},
+{"SNo":"3","Name":"KUMARI SHALINI SAHAY","ImageID":"kumari-shalini-sahay23","Total":"49","Attempted":"5","Rank":"3"},
+{"SNo":"4","Name":"AARUSHI SINGH","ImageID":"aarushi-singh28","Total":"25","Attempted":"3","Rank":"4"},
 {"SNo":"5","Name":"NISHA BHARTI","ImageID":"nisha-bharti28","Total":"19","Attempted":"2","Rank":"5"},
 {"SNo":"6","Name":"SHOBHA BHARTI","ImageID":"shobha-bharti27","Total":"19","Attempted":"3","Rank":"5"},
 {"SNo":"7","Name":"SHWETA KUMARI","ImageID":"shweta-kumari26","Total":"19","Attempted":"2","Rank":"5"},
