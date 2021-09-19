@@ -84,10 +84,10 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - 'static/js/app-local.js'
+  - 'js/app-local.js'
 
-extra_css:
-  - 'static/stylesheets/extra.css' # depends on theme
+# extra_css:
+#   - 'stylesheets/extra.css' # depends on theme
 
 
 # google_analytics: ['UA-140256543-1', 'sandeepsuman.com']

@@ -82,10 +82,10 @@ markdown_extensions:
 
 extra_javascript:
   - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
-  - '/python-workshop/static/js/app.js'
+  - '/python-workshop/js/app.js'
 
-extra_css:
-  - '/python-workshop/static/stylesheets/extra.css' # depends on theme
+# extra_css:
+#   - '/python-workshop/stylesheets/extra.css' # depends on theme
 
 
 google_analytics: ['UA-140256543-1', 'sandeepsuman.com']
