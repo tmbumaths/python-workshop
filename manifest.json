@@ -2,14 +2,14 @@
   "name": "Python Workshop",
   "short_name": "Python",
   "description": "This website is dedicated to the workshop on introductory python programming language, organized by the university department of mathematics, Tilka Manjhi Bhagalpur University, Bhagalpur.",
-  "theme_color": "dark-green",
-  "background_color": "dark-green",
+  "theme_color": "green",
+  "background_color": "green",
   "display": "standalone",
   "Scope": "/python-workshop/",
   "start_url": "/python-workshop/?homescreen=1",
   "icons": [
     {
-      "src": "/fdp-python-2020/static/images/icons/icon-72x72.png",
+      "src": "/python-workshop/static/images/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
