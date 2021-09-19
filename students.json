@@ -1,6 +1,6 @@
 var sourceData = 
 [
-{"SNo":"1","Name":"HIMANSHU KUMAR PREMI","ImageID":"himanshu-kumar-premi25","Total":"58","Attempted":"6","Rank":"1"},
+{"SNo":"1","Name":"HIMANSHU KUMAR PREMI","ImageID":"himanshu-kumar-premi25","Total":"78","Attempted":"8","Rank":"1"},
 {"SNo":"2","Name":"KUMARI SONI","ImageID":"kumari-soni25","Total":"51","Attempted":"7","Rank":"2"},
 {"SNo":"3","Name":"KUMARI SHALINI SAHAY","ImageID":"kumari-shalini-sahay23","Total":"49","Attempted":"5","Rank":"3"},
 {"SNo":"4","Name":"AARUSHI SINGH","ImageID":"aarushi-singh28","Total":"25","Attempted":"3","Rank":"4"},
@@ -10,9 +10,9 @@ var sourceData =
 {"SNo":"8","Name":"MONA CHATTERJEE","ImageID":"mona-chatterjee18","Total":"17","Attempted":"2","Rank":"6"},
 {"SNo":"9","Name":"SARIKA MISHRA","ImageID":"sarika-mishra-25","Total":"17","Attempted":"2","Rank":"6"},
 {"SNo":"10","Name":"GOPAL KUMAR AGRAWAL","ImageID":"gopal-kumar-agrawal29","Total":"16","Attempted":"2","Rank":"7"},
-{"SNo":"11","Name":"KUNAL KUMAR VATSA","ImageID":"kunal-kumar-vatsa20","Total":"8","Attempted":"1","Rank":"8"},
-{"SNo":"12","Name":"KUMUD KUMARI","ImageID":"kumud-kumari21","Total":"8","Attempted":"1","Rank":"8"},
-{"SNo":"13","Name":"PRACHI KUMARI","ImageID":"prachi-kumari28","Total":"3","Attempted":"1","Rank":"9"},
+{"SNo":"11","Name":"PRACHI KUMARI","ImageID":"prachi-kumari28","Total":"9","Attempted":"2","Rank":"8"},
+{"SNo":"12","Name":"KUNAL KUMAR VATSA","ImageID":"kunal-kumar-vatsa20","Total":"8","Attempted":"1","Rank":"9"},
+{"SNo":"13","Name":"KUMUD KUMARI","ImageID":"kumud-kumari21","Total":"8","Attempted":"1","Rank":"9"},
 {"SNo":"14","Name":"ABHIJEET KUMAR","ImageID":"abhijeet-kumar25","Total":"0","Attempted":"0","Rank":"10"},
 {"SNo":"15","Name":"ABHIMANYU KUMAR","ImageID":"abhimanyu-kumar-27","Total":"0","Attempted":"0","Rank":"10"},
 {"SNo":"16","Name":"ADITYA KUMAR SINGH","ImageID":"aditya-kumar-singh26","Total":"0","Attempted":"0","Rank":"10"},
