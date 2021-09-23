@@ -1,9 +1,9 @@
 SNo,Name,ImageID,Total,Attempted,Rank
 1,HIMANSHU KUMAR PREMI,himanshu-kumar-premi25,100,10,1
-2,AARUSHI SINGH,aarushi-singh28,93,10,2
-3,SARIKA MISHRA ,sarika-mishra-25,91,10,3
-4,SHOBHA BHARTI,shobha-bharti27,80,9,4
-5,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,79,8,5
+2,KUMARI SHALINI SAHAY,kumari-shalini-sahay23,99,10,2
+3,AARUSHI SINGH,aarushi-singh28,93,10,3
+4,SARIKA MISHRA ,sarika-mishra-25,91,10,4
+5,SHOBHA BHARTI,shobha-bharti27,80,9,5
 6,KUMARI SONI,kumari-soni25,77,10,6
 7,PRACHI KUMARI,prachi-kumari28,63,9,7
 8,PRAVEEN KUMAR,praveen-kumar28,55,6,8
@@ -12,18 +12,19 @@ SNo,Name,ImageID,Total,Attempted,Rank
 11,NISHA BHARTI,nisha-bharti28,39,4,10
 12,SHWETA KUMARI,shweta-kumari26,39,4,10
 13,GOPAL KUMAR AGRAWAL,gopal-kumar-agrawal29,33,4,11
-14,MONA CHATTERJEE,mona-chatterjee18,27,3,12
-15,PUJA KUMARI,puja-kumari25,26,3,13
-16,RICHA SIDDHI,richa-siddhi22,18,2,14
-17,SUDHA KUMARI,sudha-kumari24,18,3,14
-18,SAJDA ASHRAFI,sajda-ashrafi21,16,2,15
-19,RAHUL KUMAR SINGH,rahul-kumar-singh25,12,2,16
-20,NIDHI KUMARI ,nidhi-kumari-28,11,3,17
-21,KUMUD KUMARI,kumud-kumari21,8,1,18
-22,ABHILASHA KUMARI,abhilasha-kumari24,7,1,19
-23,ALKA KUMARI,alka-kumari23,7,1,19
-24,RAKHI,rakhi17,7,1,19
-25,SWATI GHOSHAL,swati-ghoshal23,6,1,20
-26,MD TANWEER HASSAN,md-tanweer-hassan22,5,1,21
-27,ADITYA KUMAR SINGH,aditya-kumar-singh26,3,1,22
-28,SHAHNAZ NASIM ,shahnaz-nasim-26,3,1,22
+14,RICHA SIDDHI,richa-siddhi22,28,3,12
+15,MONA CHATTERJEE,mona-chatterjee18,27,3,13
+16,PUJA KUMARI,puja-kumari25,26,3,14
+17,SUDHA KUMARI,sudha-kumari24,18,3,15
+18,ASHISH NANDAN,ashish-nandan22,16,2,16
+19,SAJDA ASHRAFI,sajda-ashrafi21,16,2,16
+20,RAHUL KUMAR SINGH,rahul-kumar-singh25,12,2,17
+21,NIDHI KUMARI ,nidhi-kumari-28,11,3,18
+22,KUMUD KUMARI,kumud-kumari21,8,1,19
+23,ABHILASHA KUMARI,abhilasha-kumari24,7,1,20
+24,ALKA KUMARI,alka-kumari23,7,1,20
+25,RAKHI,rakhi17,7,1,20
+26,SWATI GHOSHAL,swati-ghoshal23,6,1,21
+27,MD TANWEER HASSAN,md-tanweer-hassan22,5,1,22
+28,ADITYA KUMAR SINGH,aditya-kumar-singh26,3,1,23
+29,SHAHNAZ NASIM ,shahnaz-nasim-26,3,1,23
